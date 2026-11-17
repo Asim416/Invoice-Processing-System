@@ -1,0 +1,16 @@
+{
+  "vendor_name": "Summit Packaging",
+  "invoice_number": "SP-20461",
+  "invoice_date": "2026-11-06",
+  "po_number": "PO-1012",
+  "currency": "USD",
+  "line_items": [
+    {
+      "description": "Bubble wrap roll",
+      "quantity": 20,
+      "unit_price": 52.0,
+      "amount": 1040.0
+    }
+  ],
+  "total": 1040.0
+}

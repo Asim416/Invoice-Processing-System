@@ -1,0 +1,4 @@
+vendor_name,invoice_number,invoice_date,total,currency,po_number,recommended_label,human_decision,run_id,confirmed_at,note
+Keystone IT Services,INV-7788,2026-10-14,1900.00,USD,PO-1005,Approve,approve,seed0001,2026-10-15T09:30:00+00:00,seed (synthetic)
+Delta Cables Co,DC-88204,2026-10-20,800.00,USD,PO-1006,Approve,approve,seed0002,2026-10-21T10:00:00+00:00,seed (synthetic)
+Orbit Office Furniture,INV-5001,2026-10-05,6900.00,USD,PO-1001,Approve,approve,c54907a181fd,2026-11-14T08:37:35+00:00,checked against PO

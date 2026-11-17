@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.1",
+  "run_id": "50598b94028b",
+  "started_at": "2026-11-14T08:38:24.211192Z",
+  "input_file": "data/invoices/TC03.pdf",
+  "input_sha256": "9003a0eba1618637b69fff49fed2b84a5fbe38d4fba328f88c90882d12d06f51",
+  "data_origin": "synthetic",
+  "extraction_mode": "mock",
+  "provider": null,
+  "model": null,
+  "extracted": {
+    "vendor_name": "Acme Supplies Ltd",
+    "invoice_number": "4471",
+    "invoice_date": "2026-11-02",
+    "po_number": "PO-1023",
+    "currency": "USD",
+    "line_items": [
+      {
+        "description": "Laptop 15 inch",
+        "quantity": "50",
+        "unit_price": "850.00",
+        "amount": "42500.00"
+      },
+      {
+        "description": "Docking station",
+        "quantity": "50",
+        "unit_price": "100.00",
+        "amount": "5000.00"
+      }
+    ],
+    "total": "47500.00"
+  },
+  "validation": {
+    "passed": true,
+    "attempts": 1,
+    "confidence": "high",
+    "ungrounded_fields": [],
+    "issues": []
+  },
+  "findings": [
+    {
+      "code": "UNIT_PRICE_MISMATCH",
+      "severity": "review",
+      "message": "Line 'Laptop 15 inch': unit price 850.00 vs PO 800.00 (6.25% higher); tolerance is 1.00%.",
+      "evidence": {
+        "line": "Laptop 15 inch",
+        "invoice_unit_price": "850.00",
+        "po_unit_price": "800.00",
+        "difference_pct": 6.25,
+        "direction": "higher",
+        "tolerance_pct": 1.0
+      }
+    },
+    {
+      "code": "AMOUNT_OVER_TOLERANCE",
+      "severity": "review",
+      "message": "Invoice total 47,500.00 USD exceeds PO total 45,000.00 USD by 2,500.00 (5.56%); tolerance is 1.00%.",
+      "evidence": {
+        "invoice_total": "47,500.00",
+        "po_total": "45,000.00",
+        "difference": "2,500.00",
+        "difference_pct": 5.56,
+        "tolerance_pct": 1.0
+      }
+    }
+  ],
+  "label": "Needs review",
+  "requires_human_confirmation": true,
+  "vendor_email": "Subject: Invoice 4471: clarification needed\n\nHi Acme Supplies Ltd team,\n\nWe received invoice 4471 dated 2026-11-02 and checked it against our records.\n\n- Line 'Laptop 15 inch': unit price 850.00 on the invoice vs 800.00 on the PO (6.25% higher).\n- The invoice total is 47,500.00 USD but the PO total is 45,000.00 USD (difference 2,500.00, 5.56%).\n\nCould you confirm the details or send a corrected invoice?\n\nThanks,\n[Sender name]",
+  "internal_note": "NEEDS REVIEW. Invoice 4471 from Acme Supplies Ltd (PO-1023).\nExtraction confidence: high.\nFindings:\n- [review] UNIT_PRICE_MISMATCH: Line 'Laptop 15 inch': unit price 850.00 vs PO 800.00 (6.25% higher); tolerance is 1.00%.\n- [review] AMOUNT_OVER_TOLERANCE: Invoice total 47,500.00 USD exceeds PO total 45,000.00 USD by 2,500.00 (5.56%); tolerance is 1.00%.\nEscalation: total exceeds 5,000.00; manager approval is assumed to be required.\nA human must confirm this recommendation: ap confirm <run_id> --decision approve|hold|reject",
+  "timings_ms": {
+    "extraction": 0,
+    "rules": 0,
+    "rate_limit_wait": 0,
+    "total": 11
+  },
+  "prompt_version": null,
+  "token_usage": null,
+  "cached": false,
+  "error": null
+}

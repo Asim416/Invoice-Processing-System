@@ -1,0 +1,42 @@
+fault                             CORRECT   DETECTED FALSE_ALAR UNDER_FLAG  OVER_FLAG CRITICAL_M WRONG_DATA      ERROR   runs
+F01 total_digit_error                  24         12          0          8          0          0          0          0   44
+F02 total_is_a_line                    12         12          0          0          0          0          0          0   24
+F03 line_dropped                       12         12          0          0          0          0          0          0   24
+F04 columns_shifted                    28         12          0          8          0          0          0          0   48
+F05 vendor_is_customer                  7          0          0          0          0          2          3          0   12
+F06 invoice_no_is_po                   28          3          0          4          0          0          9          0   44
+F07 po_hallucinated                    28         12          0          8          0          0          0          0   48
+F08 po_missed                          27         12          0          5          0          0          0          0   44
+F09 currency_flipped                   28         12          0          8          0          0          0          0   48
+F10 date_is_due_date                    8          0          0          0          0          1          3          0   12
+F11 fenced_json                        28          0         12          8          0          0          0          0   48
+F12 numbers_as_strings                 28          0         12          4          0          0          0          0   44
+F13 extra_decision_field               28         12          0          8          0          0          0          0   48
+F14 empty_output                       28         12          0          8          0          0          0          0   48
+F15 truncated_json                     28         12          0          8          0          0          0          0   48
+F16 llm_unavailable                    28         12          0          8          0          0          0          0   48
+F17 description_paraphrased            35          0         12          1          0          0          0          0   48
+F18 total_missed                       32         12          0          0          0          0          0          0   44
+TOTAL                                 437        147         36         86          0          3         15          0   724
+
+UNSAFE runs (approved what must not be, or approved on wrong data): 18   confidence at the time: {'high': 18}
+  F05 TC01__noisy      WRONG_DATA_APPROVED  expected=Approve       got=Approve   conf=high
+  F05 TC02__noisy      WRONG_DATA_APPROVED  expected=Approve       got=Approve   conf=high
+  F05 TC05__noisy      CRITICAL_MISS        expected=Reject (hold) got=Approve   conf=high
+  F05 TC06__noisy      CRITICAL_MISS        expected=Needs review  got=Approve   conf=high
+  F05 TC09__noisy      WRONG_DATA_APPROVED  expected=Approve       got=Approve   conf=high
+  F06 TC01             WRONG_DATA_APPROVED  expected=Approve       got=Approve   conf=high
+  F06 TC02             WRONG_DATA_APPROVED  expected=Approve       got=Approve   conf=high
+  F06 TC09             WRONG_DATA_APPROVED  expected=Approve       got=Approve   conf=high
+  F06 TC01__altlayout  WRONG_DATA_APPROVED  expected=Approve       got=Approve   conf=high
+  F06 TC01__noisy      WRONG_DATA_APPROVED  expected=Approve       got=Approve   conf=high
+  F06 TC02__altlayout  WRONG_DATA_APPROVED  expected=Approve       got=Approve   conf=high
+  F06 TC02__noisy      WRONG_DATA_APPROVED  expected=Approve       got=Approve   conf=high
+  F06 TC09__altlayout  WRONG_DATA_APPROVED  expected=Approve       got=Approve   conf=high
+  F06 TC09__noisy      WRONG_DATA_APPROVED  expected=Approve       got=Approve   conf=high
+  F10 TC01__noisy      WRONG_DATA_APPROVED  expected=Approve       got=Approve   conf=high
+  F10 TC02__noisy      WRONG_DATA_APPROVED  expected=Approve       got=Approve   conf=high
+  F10 TC06__noisy      CRITICAL_MISS        expected=Needs review  got=Approve   conf=high
+  F10 TC09__noisy      WRONG_DATA_APPROVED  expected=Approve       got=Approve   conf=high
+
+written: /tmp/day3_snapshot/results/day4_before_faults.csv

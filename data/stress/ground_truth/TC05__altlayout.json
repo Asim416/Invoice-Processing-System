@@ -1,0 +1,16 @@
+{
+  "vendor_name": "Keystone IT Services",
+  "invoice_number": "INV-7788",
+  "invoice_date": "2026-10-14",
+  "po_number": "PO-1005",
+  "currency": "USD",
+  "line_items": [
+    {
+      "description": "Support hours",
+      "quantity": 20,
+      "unit_price": 95.0,
+      "amount": 1900.0
+    }
+  ],
+  "total": 1900.0
+}

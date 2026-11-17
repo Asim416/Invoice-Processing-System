@@ -1,0 +1,16 @@
+{
+  "vendor_name": "Rhein Industrial GmbH",
+  "invoice_number": "RI-2026-117",
+  "invoice_date": "2026-11-05",
+  "po_number": "PO-1011",
+  "currency": "EUR",
+  "line_items": [
+    {
+      "description": "Bearing set",
+      "quantity": 40,
+      "unit_price": 25.0,
+      "amount": 1000.0
+    }
+  ],
+  "total": 1000.0
+}

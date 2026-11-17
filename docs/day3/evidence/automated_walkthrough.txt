@@ -1,0 +1,67 @@
+AUTOMATED WALKTHROUGH (headless app driven by a script: NOT a human or proxy user). Mode: demo, data: synthetic.
+Sidebar status: ['Demo mode: only the built-in sample invoices can be read', 'Data: local sample files', 'Manager alerts: demo (printed only)']
+
+=== Step 1: user checks sample TC03 (total over PO) ===
+[AMBER] **Needs your review before paying** | Read the reasons below, then decide.
+[AMBER] Demo mode: only the built-in sample invoices can be read
+  > 🟠 A unit price differs from the purchase order
+  > 🟠 Invoice total is higher than the purchase order
+  > Internal note
+  > Technical details (for support)
+  > Check my setup
+  DRAFT EMAIL:
+    Subject: Invoice 4471: clarification needed
+    
+    Hi Acme Supplies Ltd team,
+    
+    We received invoice 4471 dated 2026-11-02 and checked it against our records.
+    
+    - Line 'Laptop 15 inch': unit price 850.00 on the invoice vs 800.00 on the PO (6.25% higher).
+    - The invoice total is 47,500.00 USD but the PO total is 45,000.00 USD (difference 2,500.00, 5.56%).
+    
+    Could you confirm the details or send a corrected invoice?
+    
+    Thanks,
+    [Sender name]
+--- manager notification (console) ---
+Invoice 4471 from Acme Supplies Ltd needs manager review.
+Recommendation: Needs review | Total: 47,500.00 USD | PO: PO-1023
+Reasons: A unit price differs from the purchase order; Invoice total is higher than the purchase order
+Run: 9c4d54990d63
+--------------------------------------
+
+After 'Send to manager': Printed to the console (no Slack configured).
+
+=== Step 2: user checks sample TC01 (clean invoice) ===
+[GREEN] **Looks safe to pay** | Check the details below, then record your decision.
+[AMBER] Demo mode: only the built-in sample invoices can be read
+  > Internal note
+  > Technical details (for support)
+  > Check my setup
+
+After recording the decision: Recorded: invoice INV-5001 approved for payment. Nothing was paid or sent.
+
+=== Step 3: same invoice submitted again ===
+[AMBER] Demo mode: only the built-in sample invoices can be read
+[RED] **Do not pay yet** | Put it on hold and contact the vendor.
+  > 🔴 This invoice was already processed
+  > Internal note
+  > Technical details (for support)
+  > Check my setup
+  DRAFT EMAIL:
+    Subject: Invoice INV-5001: clarification needed
+    
+    Hi Orbit Office Furniture team,
+    
+    We received invoice INV-5001 dated 2026-10-05 and checked it against our records.
+    
+    - Our records show that invoice INV-5001 was already received.
+    
+    We are holding this invoice until this is resolved.
+    
+    Thanks,
+    [Sender name]
+
+Sidebar history: [{'File': 'TC01.pdf', 'Result': 'Reject (hold)'}, {'File': 'TC01.pdf', 'Result': 'Approve'}, {'File': 'TC03.pdf', 'Result': 'Needs review'}]
+
+Unhandled exceptions during the walkthrough: 0

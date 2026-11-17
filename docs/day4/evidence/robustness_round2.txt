@@ -1,0 +1,9 @@
+variant              CORRECT   runs
+base                      12   12
+altlayout                 12   12
+noisy                     12   12
+eu                        12   12
+
+not fully correct: 0 of 48
+
+written: /mnt/user-data/outputs/ap-invoice-system/results/day4_round2_robustness.csv

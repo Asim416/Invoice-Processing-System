@@ -1,0 +1,13 @@
+po_number,vendor_name,currency,status,total
+PO-1001,Orbit Office Furniture,USD,open,6900.00
+PO-1002,Delta Cables Co,USD,open,4500.00
+PO-1023,Acme Supplies Ltd,USD,open,45000.00
+PO-1004,Summit Packaging,USD,open,1800.00
+PO-1005,Keystone IT Services,USD,open,1900.00
+PO-1006,Delta Cables Co,USD,open,800.00
+PO-1007,Orbit Office Furniture,USD,open,1300.00
+PO-1009,Northbridge Stationery,USD,open,1450.00
+PO-1010,Northbridge Stationery,USD,open,390.00
+PO-1011,Rhein Industrial GmbH,USD,open,1000.00
+PO-1012,Summit Packaging,USD,open,900.00
+PO-1013,Orbit Office Furniture,USD,closed,1050.00

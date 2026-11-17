@@ -1,0 +1,7 @@
+Run c54907a181fd | mode: mock
+RESULT: APPROVE   (confidence: high, human confirmation required)
+Invoice INV-5001 | Orbit Office Furniture | PO: PO-1001 | total: 6900.00 USD
+Findings: none, all checks passed
+
+Time: 14 ms (extraction 0 ms, rules 0 ms, rate-limit wait 0 ms)
+Next: python -m ap.cli confirm c54907a181fd --decision approve|hold|reject

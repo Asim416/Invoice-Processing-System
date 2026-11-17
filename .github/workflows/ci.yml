@@ -1,0 +1,19 @@
+# Runs the whole test suite (232+ tests, no secrets or accounts needed) on every push and pull request.
+# NOTE: written without access to GitHub, so it has not been run yet. The first push is its first test.
+name: tests
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python scripts/generate_data.py --stress --holdout
+      - run: python -m pytest tests -q

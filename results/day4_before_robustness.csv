@@ -1,0 +1,49 @@
+attempts,base_case,case,codes,codes_ok,confidence,data_ok,email,error,expected,extracted_none,got,ms,ok_currency,ok_invoice_date,ok_invoice_number,ok_po_number,ok_total,ok_vendor_name,outcome,suspicious,tokens,total_value,variant,wait_ms
+1,TC01,TC01,,True,high,True,False,,Approve,False,Approve,11,True,True,True,True,True,True,CORRECT,False,0,6900.00,base,0
+1,TC02,TC02,WITHIN_TOLERANCE_VARIANCE,True,high,True,False,,Approve,False,Approve,7,True,True,True,True,True,True,CORRECT,False,0,4512.00,base,0
+1,TC03,TC03,AMOUNT_OVER_TOLERANCE;UNIT_PRICE_MISMATCH,True,high,True,True,,Needs review,False,Needs review,9,True,True,True,True,True,True,CORRECT,False,0,47500.00,base,0
+1,TC04,TC04,AMOUNT_OVER_TOLERANCE;QUANTITY_EXCEEDS_PO,True,high,True,True,,Needs review,False,Needs review,8,True,True,True,True,True,True,CORRECT,False,0,1920.00,base,0
+1,TC05,TC05,EXACT_DUPLICATE,True,high,True,True,,Reject (hold),False,Reject (hold),8,True,True,True,True,True,True,CORRECT,False,0,1900.00,base,0
+1,TC06,TC06,POSSIBLE_DUPLICATE,True,high,True,True,,Needs review,False,Needs review,5,True,True,True,True,True,True,CORRECT,False,0,800.00,base,0
+1,TC07,TC07,PO_MISSING_ON_INVOICE,True,high,True,True,,Needs review,False,Needs review,7,True,True,True,True,True,True,CORRECT,False,0,1300.00,base,0
+1,TC08,TC08,PO_NOT_FOUND,True,high,True,True,,Reject (hold),False,Reject (hold),7,True,True,True,True,True,True,CORRECT,False,0,950.00,base,0
+1,TC09,TC09,,True,high,True,False,,Approve,False,Approve,8,True,True,True,True,True,True,CORRECT,False,0,1450.00,base,0
+1,TC10,TC10,FIELD_NOT_FOUND,True,high,True,False,,Needs review,False,Needs review,8,True,True,True,True,True,True,CORRECT,False,0,,base,0
+1,TC11,TC11,CURRENCY_MISMATCH,True,high,True,True,,Needs review,False,Needs review,9,True,True,True,True,True,True,CORRECT,False,0,1000.00,base,0
+1,TC12,TC12,AMOUNT_OVER_TOLERANCE;SUSPICIOUS_TEXT;UNIT_PRICE_MISMATCH,True,high,True,True,,Needs review,False,Needs review,8,True,True,True,True,True,True,CORRECT,True,0,1040.00,base,0
+1,TC01,TC01__altlayout,,True,high,True,False,,Approve,False,Approve,7,True,True,True,True,True,True,CORRECT,False,0,6900.00,altlayout,0
+1,TC01,TC01__noisy,,True,high,True,False,,Approve,False,Approve,13,True,True,True,True,True,True,CORRECT,False,0,6900.00,noisy,0
+1,TC01,TC01__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,Needs review,7,False,False,False,False,False,False,FALSE_ALARM,False,0,,eu,0
+1,TC02,TC02__altlayout,WITHIN_TOLERANCE_VARIANCE,True,high,True,False,,Approve,False,Approve,9,True,True,True,True,True,True,CORRECT,False,0,4512.00,altlayout,0
+1,TC02,TC02__noisy,WITHIN_TOLERANCE_VARIANCE,True,high,True,False,,Approve,False,Approve,11,True,True,True,True,True,True,CORRECT,False,0,4512.00,noisy,0
+1,TC02,TC02__eu,EXTRACTION_INVALID,False,none,False,False,,Approve,True,Needs review,5,False,False,False,False,False,False,FALSE_ALARM,False,0,,eu,0
+1,TC03,TC03__altlayout,AMOUNT_OVER_TOLERANCE;UNIT_PRICE_MISMATCH,True,high,True,True,,Needs review,False,Needs review,7,True,True,True,True,True,True,CORRECT,False,0,47500.00,altlayout,0
+1,TC03,TC03__noisy,AMOUNT_OVER_TOLERANCE;UNIT_PRICE_MISMATCH,True,high,True,True,,Needs review,False,Needs review,14,True,True,True,True,True,True,CORRECT,False,0,47500.00,noisy,0
+1,TC03,TC03__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,Needs review,22,False,False,False,False,False,False,CORRECT,False,0,,eu,0
+1,TC04,TC04__altlayout,AMOUNT_OVER_TOLERANCE;QUANTITY_EXCEEDS_PO,True,high,True,True,,Needs review,False,Needs review,6,True,True,True,True,True,True,CORRECT,False,0,1920.00,altlayout,0
+1,TC04,TC04__noisy,AMOUNT_OVER_TOLERANCE;QUANTITY_EXCEEDS_PO,True,high,True,True,,Needs review,False,Needs review,13,True,True,True,True,True,True,CORRECT,False,0,1920.00,noisy,0
+1,TC04,TC04__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,eu,0
+1,TC05,TC05__altlayout,EXACT_DUPLICATE,True,high,True,True,,Reject (hold),False,Reject (hold),6,True,True,True,True,True,True,CORRECT,False,0,1900.00,altlayout,0
+1,TC05,TC05__noisy,EXACT_DUPLICATE,True,high,True,True,,Reject (hold),False,Reject (hold),12,True,True,True,True,True,True,CORRECT,False,0,1900.00,noisy,0
+1,TC05,TC05__eu,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,Needs review,6,False,False,False,False,False,False,UNDER_FLAG,False,0,,eu,0
+1,TC06,TC06__altlayout,POSSIBLE_DUPLICATE,True,high,True,True,,Needs review,False,Needs review,8,True,True,True,True,True,True,CORRECT,False,0,800.00,altlayout,0
+1,TC06,TC06__noisy,POSSIBLE_DUPLICATE,True,high,True,True,,Needs review,False,Needs review,10,True,True,True,True,True,True,CORRECT,False,0,800.00,noisy,0
+1,TC06,TC06__eu,LOW_CONFIDENCE_EXTRACTION;POSSIBLE_DUPLICATE,True,low,True,True,,Needs review,False,Needs review,5,True,True,True,True,True,True,CORRECT,False,0,800.00,eu,0
+1,TC07,TC07__altlayout,PO_MISSING_ON_INVOICE,True,high,True,True,,Needs review,False,Needs review,6,True,True,True,True,True,True,CORRECT,False,0,1300.00,altlayout,0
+1,TC07,TC07__noisy,PO_MISSING_ON_INVOICE,True,high,True,True,,Needs review,False,Needs review,11,True,True,True,True,True,True,CORRECT,False,0,1300.00,noisy,0
+1,TC07,TC07__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,eu,0
+1,TC08,TC08__altlayout,PO_NOT_FOUND,True,high,True,True,,Reject (hold),False,Reject (hold),5,True,True,True,True,True,True,CORRECT,False,0,950.00,altlayout,0
+1,TC08,TC08__noisy,PO_NOT_FOUND,True,high,True,True,,Reject (hold),False,Reject (hold),11,True,True,True,True,True,True,CORRECT,False,0,950.00,noisy,0
+1,TC08,TC08__eu,LOW_CONFIDENCE_EXTRACTION;PO_NOT_FOUND,True,low,True,True,,Reject (hold),False,Reject (hold),6,True,True,True,True,True,True,CORRECT,False,0,950.00,eu,0
+1,TC09,TC09__altlayout,,True,high,True,False,,Approve,False,Approve,6,True,True,True,True,True,True,CORRECT,False,0,1450.00,altlayout,0
+1,TC09,TC09__noisy,,True,high,True,False,,Approve,False,Approve,13,True,True,True,True,True,True,CORRECT,False,0,1450.00,noisy,0
+1,TC09,TC09__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,Needs review,6,False,False,False,False,False,False,FALSE_ALARM,False,0,,eu,0
+1,TC10,TC10__altlayout,FIELD_NOT_FOUND,True,high,True,False,,Needs review,False,Needs review,7,True,True,True,True,True,True,CORRECT,False,0,,altlayout,0
+1,TC10,TC10__noisy,FIELD_NOT_FOUND,True,high,True,False,,Needs review,False,Needs review,12,True,True,True,True,True,True,CORRECT,False,0,,noisy,0
+1,TC10,TC10__eu,FIELD_NOT_FOUND;LOW_CONFIDENCE_EXTRACTION,True,low,True,False,,Needs review,False,Needs review,7,True,True,True,True,True,True,CORRECT,False,0,,eu,0
+1,TC11,TC11__altlayout,CURRENCY_MISMATCH,True,high,True,True,,Needs review,False,Needs review,5,True,True,True,True,True,True,CORRECT,False,0,1000.00,altlayout,0
+1,TC11,TC11__noisy,CURRENCY_MISMATCH,True,high,True,True,,Needs review,False,Needs review,13,True,True,True,True,True,True,CORRECT,False,0,1000.00,noisy,0
+1,TC11,TC11__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,Needs review,5,False,False,False,False,False,False,CORRECT,False,0,,eu,0
+1,TC12,TC12__altlayout,AMOUNT_OVER_TOLERANCE;SUSPICIOUS_TEXT;UNIT_PRICE_MISMATCH,True,high,True,True,,Needs review,False,Needs review,7,True,True,True,True,True,True,CORRECT,True,0,1040.00,altlayout,0
+1,TC12,TC12__noisy,AMOUNT_OVER_TOLERANCE;SUSPICIOUS_TEXT;UNIT_PRICE_MISMATCH,True,high,True,True,,Needs review,False,Needs review,14,True,True,True,True,True,True,CORRECT,True,0,1040.00,noisy,0
+1,TC12,TC12__eu,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,Needs review,7,False,False,False,False,False,False,CORRECT,True,0,,eu,0

@@ -1,0 +1,22 @@
+{
+  "vendor_name": "Summit Packaging",
+  "invoice_number": "SP-20417",
+  "invoice_date": "2026-10-12",
+  "po_number": "PO-1004",
+  "currency": "USD",
+  "line_items": [
+    {
+      "description": "Pallet wrap",
+      "quantity": 55,
+      "unit_price": 24.0,
+      "amount": 1320.0
+    },
+    {
+      "description": "Label rolls",
+      "quantity": 100,
+      "unit_price": 6.0,
+      "amount": 600.0
+    }
+  ],
+  "total": 1920.0
+}

@@ -1,0 +1,8 @@
+# Business rules. Changing a value requires updating the test set to match.
+amount_tolerance_pct: 1.0       # invoice total may exceed PO total by at most this
+unit_price_tolerance_pct: 1.0   # unit price may differ from PO price by at most this
+quantity_over_allowed: 0        # billed quantity may exceed PO quantity by at most this
+supported_currencies: [USD, EUR]
+max_file_mb: 10
+extraction_retry_limit: 1       # corrective retries after a validation failure
+manager_escalation_threshold: 5000  # exceptions above this are noted as needing manager approval (assumed)

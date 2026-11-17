@@ -1,0 +1,98 @@
+{
+  "TC01__rich": {
+    "bill_to": "Harbor Light Trading Co",
+    "due_date": "2026-11-04",
+    "order_date": "2026-09-25",
+    "delivery_date": "2026-10-08",
+    "your_ref": "ORD-5500",
+    "remit_to": "Example Bank Lockbox"
+  },
+  "TC02__rich": {
+    "bill_to": "Harbor Light Trading Co",
+    "due_date": "2026-11-07",
+    "order_date": "2026-09-28",
+    "delivery_date": "2026-10-11",
+    "your_ref": "ORD-5501",
+    "remit_to": "Example Bank Lockbox"
+  },
+  "TC03__rich": {
+    "bill_to": "Harbor Light Trading Co",
+    "due_date": "2026-12-02",
+    "order_date": "2026-10-23",
+    "delivery_date": "2026-11-05",
+    "your_ref": "ORD-5502",
+    "remit_to": "Example Bank Lockbox"
+  },
+  "TC04__rich": {
+    "bill_to": "Harbor Light Trading Co",
+    "due_date": "2026-11-11",
+    "order_date": "2026-10-02",
+    "delivery_date": "2026-10-15",
+    "your_ref": "ORD-5503",
+    "remit_to": "Example Bank Lockbox"
+  },
+  "TC05__rich": {
+    "bill_to": "Harbor Light Trading Co",
+    "due_date": "2026-11-13",
+    "order_date": "2026-10-04",
+    "delivery_date": "2026-10-17",
+    "your_ref": "ORD-5504",
+    "remit_to": "Example Bank Lockbox"
+  },
+  "TC06__rich": {
+    "bill_to": "Harbor Light Trading Co",
+    "due_date": "2026-11-19",
+    "order_date": "2026-10-10",
+    "delivery_date": "2026-10-23",
+    "your_ref": "ORD-5505",
+    "remit_to": "Example Bank Lockbox"
+  },
+  "TC07__rich": {
+    "bill_to": "Harbor Light Trading Co",
+    "due_date": "2026-11-21",
+    "order_date": "2026-10-12",
+    "delivery_date": "2026-10-25",
+    "your_ref": "ORD-5506",
+    "remit_to": "Example Bank Lockbox"
+  },
+  "TC08__rich": {
+    "bill_to": "Harbor Light Trading Co",
+    "due_date": "2026-11-24",
+    "order_date": "2026-10-15",
+    "delivery_date": "2026-10-28",
+    "your_ref": "ORD-5507",
+    "remit_to": "Example Bank Lockbox"
+  },
+  "TC09__rich": {
+    "bill_to": "Harbor Light Trading Co",
+    "due_date": "2026-12-03",
+    "order_date": "2026-10-24",
+    "delivery_date": "2026-11-06",
+    "your_ref": "ORD-5508",
+    "remit_to": "Example Bank Lockbox"
+  },
+  "TC10__rich": {
+    "bill_to": "Harbor Light Trading Co",
+    "due_date": "2026-12-04",
+    "order_date": "2026-10-25",
+    "delivery_date": "2026-11-07",
+    "your_ref": "ORD-5509",
+    "remit_to": "Example Bank Lockbox"
+  },
+  "TC11__rich": {
+    "bill_to": "Harbor Light Trading Co",
+    "due_date": "2026-12-05",
+    "order_date": "2026-10-26",
+    "delivery_date": "2026-11-08",
+    "your_ref": "ORD-5510",
+    "remit_to": "Example Bank Lockbox"
+  },
+  "TC12__rich": {
+    "bill_to": "Harbor Light Trading Co",
+    "due_date": "2026-12-06",
+    "order_date": "2026-10-27",
+    "delivery_date": "2026-11-09",
+    "your_ref": "ORD-5511",
+    "remit_to": "Example Bank Lockbox"
+  }
+}

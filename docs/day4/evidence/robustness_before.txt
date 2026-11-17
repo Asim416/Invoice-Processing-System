@@ -1,0 +1,19 @@
+variant              CORRECT     FALSE_ALARM      UNDER_FLAG   runs
+base                      12               0               0   12
+altlayout                 12               0               0   12
+noisy                     12               0               0   12
+eu                         8               3               1   12
+
+not fully correct: 10 of 48
+  TC01__eu         FALSE_ALARM            expected=Approve       got=Needs review  conf=none   codes=EXTRACTION_INVALID
+  TC02__eu         FALSE_ALARM            expected=Approve       got=Needs review  conf=none   codes=EXTRACTION_INVALID
+  TC03__eu         CORRECT                expected=Needs review  got=Needs review  conf=none   codes=EXTRACTION_INVALID
+  TC04__eu         CORRECT                expected=Needs review  got=Needs review  conf=none   codes=EXTRACTION_INVALID
+  TC05__eu         UNDER_FLAG             expected=Reject (hold) got=Needs review  conf=none   codes=EXTRACTION_INVALID
+  TC07__eu         CORRECT                expected=Needs review  got=Needs review  conf=none   codes=EXTRACTION_INVALID
+  TC09__eu         FALSE_ALARM            expected=Approve       got=Needs review  conf=none   codes=EXTRACTION_INVALID
+  TC11__eu         CORRECT                expected=Needs review  got=Needs review  conf=none   codes=EXTRACTION_INVALID
+  TC12__altlayout  CORRECT                expected=Needs review  got=Needs review  conf=high   codes=AMOUNT_OVER_TOLERANCE;UNIT_PRICE_MISMATCH
+  TC12__eu         CORRECT                expected=Needs review  got=Needs review  conf=none   codes=EXTRACTION_INVALID;SUSPICIOUS_TEXT
+
+written: /tmp/day3_snapshot/results/day4_before_robustness.csv

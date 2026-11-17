@@ -1,0 +1,79 @@
+attempts,base_case,case,codes,codes_ok,confidence,data_ok,email,error,expected,extracted_none,fault,fault_name,got,ms,ok_currency,ok_invoice_date,ok_invoice_number,ok_po_number,ok_total,ok_vendor_name,outcome,suspicious,tokens,total_value,transient,variant,wait_ms
+1,TC01,TC01__rich,,True,high,False,False,,Approve,False,H01,date_is_delivery_date,Approve,23,True,False,True,True,True,True,WRONG_DATA_APPROVED,False,0,6900.00,False,rich,0
+1,TC02,TC02__rich,WITHIN_TOLERANCE_VARIANCE,True,high,False,False,,Approve,False,H01,date_is_delivery_date,Approve,14,True,False,True,True,True,True,WRONG_DATA_APPROVED,False,0,4512.00,False,rich,0
+1,TC03,TC03__rich,AMOUNT_OVER_TOLERANCE;UNIT_PRICE_MISMATCH,True,high,False,True,,Needs review,False,H01,date_is_delivery_date,Needs review,16,True,False,True,True,True,True,CORRECT,False,0,47500.00,False,rich,0
+1,TC04,TC04__rich,AMOUNT_OVER_TOLERANCE;QUANTITY_EXCEEDS_PO,True,high,False,True,,Needs review,False,H01,date_is_delivery_date,Needs review,15,True,False,True,True,True,True,CORRECT,False,0,1920.00,False,rich,0
+1,TC05,TC05__rich,EXACT_DUPLICATE,True,high,False,True,,Reject (hold),False,H01,date_is_delivery_date,Reject (hold),19,True,False,True,True,True,True,CORRECT,False,0,1900.00,False,rich,0
+1,TC06,TC06__rich,,False,high,False,False,,Needs review,False,H01,date_is_delivery_date,Approve,15,True,False,True,True,True,True,CRITICAL_MISS,False,0,800.00,False,rich,0
+1,TC07,TC07__rich,PO_MISSING_ON_INVOICE,True,high,False,True,,Needs review,False,H01,date_is_delivery_date,Needs review,20,True,False,True,True,True,True,CORRECT,False,0,1300.00,False,rich,0
+1,TC08,TC08__rich,PO_NOT_FOUND,True,high,False,True,,Reject (hold),False,H01,date_is_delivery_date,Reject (hold),40,True,False,True,True,True,True,CORRECT,False,0,950.00,False,rich,0
+1,TC09,TC09__rich,,True,high,False,False,,Approve,False,H01,date_is_delivery_date,Approve,18,True,False,True,True,True,True,WRONG_DATA_APPROVED,False,0,1450.00,False,rich,0
+1,TC10,TC10__rich,FIELD_NOT_FOUND,True,high,False,False,,Needs review,False,H01,date_is_delivery_date,Needs review,15,True,False,True,True,True,True,CORRECT,False,0,,False,rich,0
+1,TC11,TC11__rich,CURRENCY_MISMATCH,True,high,False,True,,Needs review,False,H01,date_is_delivery_date,Needs review,13,True,False,True,True,True,True,CORRECT,False,0,1000.00,False,rich,0
+1,TC12,TC12__rich,AMOUNT_OVER_TOLERANCE;SUSPICIOUS_TEXT;UNIT_PRICE_MISMATCH,True,high,False,True,,Needs review,False,H01,date_is_delivery_date,Needs review,17,True,False,True,True,True,True,CORRECT,True,0,1040.00,False,rich,0
+1,TC01,TC01__rich,,True,high,False,False,,Approve,False,H02,date_is_order_date,Approve,15,True,False,True,True,True,True,WRONG_DATA_APPROVED,False,0,6900.00,False,rich,0
+1,TC02,TC02__rich,WITHIN_TOLERANCE_VARIANCE,True,high,False,False,,Approve,False,H02,date_is_order_date,Approve,14,True,False,True,True,True,True,WRONG_DATA_APPROVED,False,0,4512.00,False,rich,0
+1,TC03,TC03__rich,AMOUNT_OVER_TOLERANCE;UNIT_PRICE_MISMATCH,True,high,False,True,,Needs review,False,H02,date_is_order_date,Needs review,15,True,False,True,True,True,True,CORRECT,False,0,47500.00,False,rich,0
+1,TC04,TC04__rich,AMOUNT_OVER_TOLERANCE;QUANTITY_EXCEEDS_PO,True,high,False,True,,Needs review,False,H02,date_is_order_date,Needs review,14,True,False,True,True,True,True,CORRECT,False,0,1920.00,False,rich,0
+1,TC05,TC05__rich,EXACT_DUPLICATE,True,high,False,True,,Reject (hold),False,H02,date_is_order_date,Reject (hold),13,True,False,True,True,True,True,CORRECT,False,0,1900.00,False,rich,0
+1,TC06,TC06__rich,,False,high,False,False,,Needs review,False,H02,date_is_order_date,Approve,14,True,False,True,True,True,True,CRITICAL_MISS,False,0,800.00,False,rich,0
+1,TC07,TC07__rich,PO_MISSING_ON_INVOICE,True,high,False,True,,Needs review,False,H02,date_is_order_date,Needs review,13,True,False,True,True,True,True,CORRECT,False,0,1300.00,False,rich,0
+1,TC08,TC08__rich,PO_NOT_FOUND,True,high,False,True,,Reject (hold),False,H02,date_is_order_date,Reject (hold),14,True,False,True,True,True,True,CORRECT,False,0,950.00,False,rich,0
+1,TC09,TC09__rich,,True,high,False,False,,Approve,False,H02,date_is_order_date,Approve,14,True,False,True,True,True,True,WRONG_DATA_APPROVED,False,0,1450.00,False,rich,0
+1,TC10,TC10__rich,FIELD_NOT_FOUND,True,high,False,False,,Needs review,False,H02,date_is_order_date,Needs review,16,True,False,True,True,True,True,CORRECT,False,0,,False,rich,0
+1,TC11,TC11__rich,CURRENCY_MISMATCH,True,high,False,True,,Needs review,False,H02,date_is_order_date,Needs review,14,True,False,True,True,True,True,CORRECT,False,0,1000.00,False,rich,0
+1,TC12,TC12__rich,AMOUNT_OVER_TOLERANCE;SUSPICIOUS_TEXT;UNIT_PRICE_MISMATCH,True,high,False,True,,Needs review,False,H02,date_is_order_date,Needs review,16,True,False,True,True,True,True,CORRECT,True,0,1040.00,False,rich,0
+1,TC01,TC01__rich,,True,high,False,False,,Approve,False,H03,invoice_no_is_customer_ref,Approve,14,True,True,False,True,True,True,WRONG_DATA_APPROVED,False,0,6900.00,False,rich,0
+1,TC02,TC02__rich,WITHIN_TOLERANCE_VARIANCE,True,high,False,False,,Approve,False,H03,invoice_no_is_customer_ref,Approve,13,True,True,False,True,True,True,WRONG_DATA_APPROVED,False,0,4512.00,False,rich,0
+1,TC03,TC03__rich,AMOUNT_OVER_TOLERANCE;UNIT_PRICE_MISMATCH,True,high,False,True,,Needs review,False,H03,invoice_no_is_customer_ref,Needs review,15,True,True,False,True,True,True,CORRECT,False,0,47500.00,False,rich,0
+1,TC04,TC04__rich,AMOUNT_OVER_TOLERANCE;QUANTITY_EXCEEDS_PO,True,high,False,True,,Needs review,False,H03,invoice_no_is_customer_ref,Needs review,14,True,True,False,True,True,True,CORRECT,False,0,1920.00,False,rich,0
+1,TC05,TC05__rich,POSSIBLE_DUPLICATE,False,high,False,True,,Reject (hold),False,H03,invoice_no_is_customer_ref,Needs review,17,True,True,False,True,True,True,UNDER_FLAG,False,0,1900.00,False,rich,0
+1,TC06,TC06__rich,POSSIBLE_DUPLICATE,True,high,False,True,,Needs review,False,H03,invoice_no_is_customer_ref,Needs review,13,True,True,False,True,True,True,CORRECT,False,0,800.00,False,rich,0
+1,TC07,TC07__rich,PO_MISSING_ON_INVOICE,True,high,False,True,,Needs review,False,H03,invoice_no_is_customer_ref,Needs review,15,True,True,False,True,True,True,CORRECT,False,0,1300.00,False,rich,0
+1,TC08,TC08__rich,PO_NOT_FOUND,True,high,False,True,,Reject (hold),False,H03,invoice_no_is_customer_ref,Reject (hold),41,True,True,False,True,True,True,CORRECT,False,0,950.00,False,rich,0
+1,TC09,TC09__rich,,True,high,False,False,,Approve,False,H03,invoice_no_is_customer_ref,Approve,14,True,True,False,True,True,True,WRONG_DATA_APPROVED,False,0,1450.00,False,rich,0
+1,TC10,TC10__rich,FIELD_NOT_FOUND,True,high,False,False,,Needs review,False,H03,invoice_no_is_customer_ref,Needs review,13,True,True,False,True,True,True,CORRECT,False,0,,False,rich,0
+1,TC11,TC11__rich,CURRENCY_MISMATCH,True,high,False,True,,Needs review,False,H03,invoice_no_is_customer_ref,Needs review,14,True,True,False,True,True,True,CORRECT,False,0,1000.00,False,rich,0
+1,TC12,TC12__rich,AMOUNT_OVER_TOLERANCE;SUSPICIOUS_TEXT;UNIT_PRICE_MISMATCH,True,high,False,True,,Needs review,False,H03,invoice_no_is_customer_ref,Needs review,16,True,True,False,True,True,True,CORRECT,True,0,1040.00,False,rich,0
+1,TC01,TC01__rich,,True,high,False,False,,Approve,False,H04,vendor_is_remit_to,Approve,19,True,True,True,True,True,False,WRONG_DATA_APPROVED,False,0,6900.00,False,rich,0
+1,TC02,TC02__rich,WITHIN_TOLERANCE_VARIANCE,True,high,False,False,,Approve,False,H04,vendor_is_remit_to,Approve,12,True,True,True,True,True,False,WRONG_DATA_APPROVED,False,0,4512.00,False,rich,0
+1,TC03,TC03__rich,AMOUNT_OVER_TOLERANCE;UNIT_PRICE_MISMATCH,True,high,False,True,,Needs review,False,H04,vendor_is_remit_to,Needs review,15,True,True,True,True,True,False,CORRECT,False,0,47500.00,False,rich,0
+1,TC04,TC04__rich,AMOUNT_OVER_TOLERANCE;QUANTITY_EXCEEDS_PO,True,high,False,True,,Needs review,False,H04,vendor_is_remit_to,Needs review,14,True,True,True,True,True,False,CORRECT,False,0,1920.00,False,rich,0
+1,TC05,TC05__rich,,False,high,False,False,,Reject (hold),False,H04,vendor_is_remit_to,Approve,14,True,True,True,True,True,False,CRITICAL_MISS,False,0,1900.00,False,rich,0
+1,TC06,TC06__rich,,False,high,False,False,,Needs review,False,H04,vendor_is_remit_to,Approve,11,True,True,True,True,True,False,CRITICAL_MISS,False,0,800.00,False,rich,0
+1,TC07,TC07__rich,PO_MISSING_ON_INVOICE,True,high,False,True,,Needs review,False,H04,vendor_is_remit_to,Needs review,14,True,True,True,True,True,False,CORRECT,False,0,1300.00,False,rich,0
+1,TC08,TC08__rich,PO_NOT_FOUND,True,high,False,True,,Reject (hold),False,H04,vendor_is_remit_to,Reject (hold),13,True,True,True,True,True,False,CORRECT,False,0,950.00,False,rich,0
+1,TC09,TC09__rich,,True,high,False,False,,Approve,False,H04,vendor_is_remit_to,Approve,14,True,True,True,True,True,False,WRONG_DATA_APPROVED,False,0,1450.00,False,rich,0
+1,TC10,TC10__rich,FIELD_NOT_FOUND,True,high,False,False,,Needs review,False,H04,vendor_is_remit_to,Needs review,13,True,True,True,True,True,False,CORRECT,False,0,,False,rich,0
+1,TC11,TC11__rich,CURRENCY_MISMATCH,True,high,False,True,,Needs review,False,H04,vendor_is_remit_to,Needs review,17,True,True,True,True,True,False,CORRECT,False,0,1000.00,False,rich,0
+1,TC12,TC12__rich,AMOUNT_OVER_TOLERANCE;SUSPICIOUS_TEXT;UNIT_PRICE_MISMATCH,True,high,False,True,,Needs review,False,H04,vendor_is_remit_to,Needs review,16,True,True,True,True,True,False,CORRECT,True,0,1040.00,False,rich,0
+2,TC05,TC05__rich,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,H05,total_and_line_replaced,Needs review,14,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,rich,0
+2,TC06,TC06__rich,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,H05,total_and_line_replaced,Needs review,12,False,False,False,False,False,False,CORRECT,False,0,,False,rich,0
+2,TC07,TC07__rich,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,H05,total_and_line_replaced,Needs review,15,False,False,False,False,False,False,CORRECT,False,0,,False,rich,0
+2,TC08,TC08__rich,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,H05,total_and_line_replaced,Needs review,13,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,rich,0
+2,TC11,TC11__rich,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,H05,total_and_line_replaced,Needs review,13,False,False,False,False,False,False,CORRECT,False,0,,False,rich,0
+2,TC12,TC12__rich,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,H05,total_and_line_replaced,Needs review,47,False,False,False,False,False,False,CORRECT,True,0,,False,rich,0
+1,TC01,TC01__rich,PO_NOT_FOUND,True,high,False,True,,Approve,False,H06,po_is_customer_ref,Reject (hold),14,True,True,True,False,True,True,DETECTED,False,0,6900.00,False,rich,0
+1,TC02,TC02__rich,PO_NOT_FOUND,False,high,False,True,,Approve,False,H06,po_is_customer_ref,Reject (hold),12,True,True,True,False,True,True,DETECTED,False,0,4512.00,False,rich,0
+1,TC03,TC03__rich,PO_NOT_FOUND,False,high,False,True,,Needs review,False,H06,po_is_customer_ref,Reject (hold),15,True,True,True,False,True,True,OVER_FLAG,False,0,47500.00,False,rich,0
+1,TC04,TC04__rich,PO_NOT_FOUND,False,high,False,True,,Needs review,False,H06,po_is_customer_ref,Reject (hold),13,True,True,True,False,True,True,OVER_FLAG,False,0,1920.00,False,rich,0
+1,TC05,TC05__rich,EXACT_DUPLICATE;PO_NOT_FOUND,True,high,False,True,,Reject (hold),False,H06,po_is_customer_ref,Reject (hold),16,True,True,True,False,True,True,CORRECT,False,0,1900.00,False,rich,0
+1,TC06,TC06__rich,POSSIBLE_DUPLICATE;PO_NOT_FOUND,True,high,False,True,,Needs review,False,H06,po_is_customer_ref,Reject (hold),13,True,True,True,False,True,True,OVER_FLAG,False,0,800.00,False,rich,0
+1,TC07,TC07__rich,PO_NOT_FOUND,False,high,False,True,,Needs review,False,H06,po_is_customer_ref,Reject (hold),14,True,True,True,False,True,True,OVER_FLAG,False,0,1300.00,False,rich,0
+1,TC08,TC08__rich,PO_NOT_FOUND,True,high,False,True,,Reject (hold),False,H06,po_is_customer_ref,Reject (hold),13,True,True,True,False,True,True,CORRECT,False,0,950.00,False,rich,0
+1,TC09,TC09__rich,PO_NOT_FOUND,True,high,False,True,,Approve,False,H06,po_is_customer_ref,Reject (hold),15,True,True,True,False,True,True,DETECTED,False,0,1450.00,False,rich,0
+1,TC10,TC10__rich,FIELD_NOT_FOUND;PO_NOT_FOUND,True,high,False,True,,Needs review,False,H06,po_is_customer_ref,Reject (hold),13,True,True,True,False,True,True,OVER_FLAG,False,0,,False,rich,0
+1,TC11,TC11__rich,PO_NOT_FOUND,False,high,False,True,,Needs review,False,H06,po_is_customer_ref,Reject (hold),14,True,True,True,False,True,True,OVER_FLAG,False,0,1000.00,False,rich,0
+1,TC12,TC12__rich,PO_NOT_FOUND;SUSPICIOUS_TEXT,False,high,False,True,,Needs review,False,H06,po_is_customer_ref,Reject (hold),14,True,True,True,False,True,True,OVER_FLAG,True,0,1040.00,False,rich,0
+1,TC01,TC01__rich,LOW_CONFIDENCE_EXTRACTION,True,low,False,False,,Approve,False,H07,date_wrong_year,Needs review,15,True,False,True,True,True,True,DETECTED,False,0,6900.00,False,rich,0
+1,TC02,TC02__rich,LOW_CONFIDENCE_EXTRACTION;WITHIN_TOLERANCE_VARIANCE,True,low,False,False,,Approve,False,H07,date_wrong_year,Needs review,13,True,False,True,True,True,True,DETECTED,False,0,4512.00,False,rich,0
+1,TC03,TC03__rich,AMOUNT_OVER_TOLERANCE;LOW_CONFIDENCE_EXTRACTION;UNIT_PRICE_MISMATCH,True,low,False,True,,Needs review,False,H07,date_wrong_year,Needs review,15,True,False,True,True,True,True,CORRECT,False,0,47500.00,False,rich,0
+1,TC04,TC04__rich,AMOUNT_OVER_TOLERANCE;LOW_CONFIDENCE_EXTRACTION;QUANTITY_EXCEEDS_PO,True,low,False,True,,Needs review,False,H07,date_wrong_year,Needs review,13,True,False,True,True,True,True,CORRECT,False,0,1920.00,False,rich,0
+1,TC05,TC05__rich,EXACT_DUPLICATE;LOW_CONFIDENCE_EXTRACTION,True,low,False,True,,Reject (hold),False,H07,date_wrong_year,Reject (hold),14,True,False,True,True,True,True,CORRECT,False,0,1900.00,False,rich,0
+1,TC06,TC06__rich,LOW_CONFIDENCE_EXTRACTION,False,low,False,False,,Needs review,False,H07,date_wrong_year,Needs review,13,True,False,True,True,True,True,CORRECT,False,0,800.00,False,rich,0
+1,TC07,TC07__rich,LOW_CONFIDENCE_EXTRACTION;PO_MISSING_ON_INVOICE,True,low,False,True,,Needs review,False,H07,date_wrong_year,Needs review,13,True,False,True,True,True,True,CORRECT,False,0,1300.00,False,rich,0
+1,TC08,TC08__rich,LOW_CONFIDENCE_EXTRACTION;PO_NOT_FOUND,True,low,False,True,,Reject (hold),False,H07,date_wrong_year,Reject (hold),15,True,False,True,True,True,True,CORRECT,False,0,950.00,False,rich,0
+1,TC09,TC09__rich,LOW_CONFIDENCE_EXTRACTION,True,low,False,False,,Approve,False,H07,date_wrong_year,Needs review,13,True,False,True,True,True,True,DETECTED,False,0,1450.00,False,rich,0
+1,TC10,TC10__rich,FIELD_NOT_FOUND;LOW_CONFIDENCE_EXTRACTION,True,low,False,False,,Needs review,False,H07,date_wrong_year,Needs review,50,True,False,True,True,True,True,CORRECT,False,0,,False,rich,0
+1,TC11,TC11__rich,CURRENCY_MISMATCH;LOW_CONFIDENCE_EXTRACTION,True,low,False,True,,Needs review,False,H07,date_wrong_year,Needs review,13,True,False,True,True,True,True,CORRECT,False,0,1000.00,False,rich,0
+1,TC12,TC12__rich,AMOUNT_OVER_TOLERANCE;LOW_CONFIDENCE_EXTRACTION;SUSPICIOUS_TEXT;UNIT_PRICE_MISMATCH,True,low,False,True,,Needs review,False,H07,date_wrong_year,Needs review,15,True,False,True,True,True,True,CORRECT,True,0,1040.00,False,rich,0

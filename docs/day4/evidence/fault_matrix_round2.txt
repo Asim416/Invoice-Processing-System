@@ -1,0 +1,24 @@
+fault                             CORRECT   DETECTED FALSE_ALAR UNDER_FLAG  OVER_FLAG CRITICAL_M WRONG_DATA      ERROR   runs
+F01 total_digit_error                  24         12          0          8          0          0          0          0   44
+F02 total_is_a_line                    12         12          0          0          0          0          0          0   24
+F03 line_dropped                       12         12          0          0          0          0          0          0   24
+F04 columns_shifted                    28         12          0          8          0          0          0          0   48
+F05 vendor_is_customer                  9          3          0          0          0          0          0          0   12
+F06 invoice_no_is_po                   24         12          0          8          0          0          0          0   44
+F07 po_hallucinated                    28         12          0          8          0          0          0          0   48
+F08 po_missed                          28         12          0          4          0          0          0          0   44
+F09 currency_flipped                   28         12          0          8          0          0          0          0   48
+F10 date_is_due_date                    7          3          0          2          0          0          0          0   12
+F11 fenced_json                        48          0          0          0          0          0          0          0   48
+F12 numbers_as_strings                 44          0          0          0          0          0          0          0   44
+F13 extra_decision_field               28         12          0          8          0          0          0          0   48
+F14 empty_output                       28         12          0          8          0          0          0          0   48
+F15 truncated_json                     28         12          0          8          0          0          0          0   48
+F16 llm_unavailable                    28         12          0          8          0          0          0          0   48
+F17 description_paraphrased            48          0          0          0          0          0          0          0   48
+F18 total_missed                       32         12          0          0          0          0          0          0   44
+TOTAL                                 484        162          0         78          0          0          0          0   724
+
+UNSAFE runs (approved what must not be, or approved on wrong data): 0   confidence at the time: {}
+
+written: /mnt/user-data/outputs/ap-invoice-system/results/day4_round2_faults.csv

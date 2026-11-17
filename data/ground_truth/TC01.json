@@ -1,0 +1,22 @@
+{
+  "vendor_name": "Orbit Office Furniture",
+  "invoice_number": "INV-5001",
+  "invoice_date": "2026-10-05",
+  "po_number": "PO-1001",
+  "currency": "USD",
+  "line_items": [
+    {
+      "description": "Standing desk",
+      "quantity": 10,
+      "unit_price": 450.0,
+      "amount": 4500.0
+    },
+    {
+      "description": "Desk chair",
+      "quantity": 20,
+      "unit_price": 120.0,
+      "amount": 2400.0
+    }
+  ],
+  "total": 6900.0
+}

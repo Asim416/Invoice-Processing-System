@@ -1,0 +1,8 @@
+configuration               unsafe (main)  unsafe (held-out)  total runs   which faults become unsafe
+all safeguards on                       0                  0         802   
+no grounding                            8                  0         802   F07x4, F09x4
+no arithmetic                           4                  0         802   F02x4
+no cross-field checks                   0                  0         802   
+no label anchoring                      0                 11         802   H01x4, H02x4, H03x3
+no vendor-vs-PO check                   3                  3         802   F05x3, H04x3
+no confidence gate                      0                  0         802   

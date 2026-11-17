@@ -1,0 +1,22 @@
+{
+  "vendor_name": "Northbridge Stationery",
+  "invoice_number": "NB-31044",
+  "invoice_date": "2026-11-04",
+  "po_number": "PO-1010",
+  "currency": "USD",
+  "line_items": [
+    {
+      "description": "Whiteboard marker box",
+      "quantity": 50,
+      "unit_price": 6.0,
+      "amount": 300.0
+    },
+    {
+      "description": "Eraser pack",
+      "quantity": 30,
+      "unit_price": 3.0,
+      "amount": 90.0
+    }
+  ],
+  "total": null
+}

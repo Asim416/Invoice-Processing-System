@@ -1,0 +1,12 @@
+Subject: Invoice $invoice_number: clarification needed
+
+Hi $vendor_name team,
+
+We received invoice $invoice_number$date_clause and checked it against our records.
+
+$bullets
+
+$closing
+
+Thanks,
+[Sender name]

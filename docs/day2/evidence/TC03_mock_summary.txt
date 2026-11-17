@@ -1,0 +1,25 @@
+Run 96605d96133a | mode: mock
+RESULT: NEEDS REVIEW   (confidence: high, human confirmation required)
+Invoice 4471 | Acme Supplies Ltd | PO: PO-1023 | total: 47500.00 USD
+Findings:
+  [review] UNIT_PRICE_MISMATCH: Line 'Laptop 15 inch': unit price 850.00 vs PO 800.00 (6.25% higher); tolerance is 1.00%.
+  [review] AMOUNT_OVER_TOLERANCE: Invoice total 47,500.00 USD exceeds PO total 45,000.00 USD by 2,500.00 (5.56%); tolerance is 1.00%.
+
+--- Draft vendor email (not sent) ---
+Subject: Invoice 4471: clarification needed
+
+Hi Acme Supplies Ltd team,
+
+We received invoice 4471 dated 2026-11-02 and checked it against our records.
+
+- Line 'Laptop 15 inch': unit price 850.00 on the invoice vs 800.00 on the PO (6.25% higher).
+- The invoice total is 47,500.00 USD but the PO total is 45,000.00 USD (difference 2,500.00, 5.56%).
+
+Could you confirm the details or send a corrected invoice?
+
+Thanks,
+[Sender name]
+--- end draft ---
+
+Time: 11 ms (extraction 0 ms, rules 0 ms, rate-limit wait 0 ms)
+Next: python -m ap.cli confirm 96605d96133a --decision approve|hold|reject

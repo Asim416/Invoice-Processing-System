@@ -1,0 +1,8 @@
+Run cdbb693164b5 | mode: mock
+RESULT: NEEDS REVIEW   (confidence: none, human confirmation required)
+Findings:
+  [review] EXTRACTION_UNAVAILABLE: The PDF has no readable text layer. The invoice must be read manually.
+
+Time: 2 ms (extraction 0 ms, rules 0 ms, rate-limit wait 0 ms)
+Note: NO_TEXT_LAYER: The PDF has no text layer; OCR is not supported.
+Next: python -m ap.cli confirm cdbb693164b5 --decision approve|hold|reject

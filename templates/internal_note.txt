@@ -1,0 +1,5 @@
+$label_upper. Invoice $invoice_number from $vendor_name ($po_ref).
+Extraction confidence: $confidence.
+$findings_block
+$escalation
+A human must confirm this recommendation: ap confirm <run_id> --decision approve|hold|reject

@@ -1,0 +1,37 @@
+case_id,invoice_file,expected_label,expected_finding_codes,expected_vendor_name,expected_invoice_number,expected_po_number,expected_currency,expected_total,must_have_null,must_flag_suspicious,data_origin,layout,description,base_case,variant
+TC01__altlayout,stress/invoices/TC01__altlayout.pdf,Approve,,Orbit Office Furniture,INV-5001,PO-1001,USD,6900.00,,false,synthetic,B,Clean match [altlayout],TC01,altlayout
+TC01__noisy,stress/invoices/TC01__noisy.pdf,Approve,,Orbit Office Furniture,INV-5001,PO-1001,USD,6900.00,,false,synthetic,A,Clean match [noisy],TC01,noisy
+TC01__eu,stress/invoices/TC01__eu.pdf,Approve,,Orbit Office Furniture,INV-5001,PO-1001,USD,6900.00,,false,synthetic,A,Clean match [eu],TC01,eu
+TC02__altlayout,stress/invoices/TC02__altlayout.pdf,Approve,WITHIN_TOLERANCE_VARIANCE,Delta Cables Co,DC-88120,PO-1002,USD,4512.00,,false,synthetic,A,Total 0.27% over PO (within 1%) [altlayout],TC02,altlayout
+TC02__noisy,stress/invoices/TC02__noisy.pdf,Approve,WITHIN_TOLERANCE_VARIANCE,Delta Cables Co,DC-88120,PO-1002,USD,4512.00,,false,synthetic,C,Total 0.27% over PO (within 1%) [noisy],TC02,noisy
+TC02__eu,stress/invoices/TC02__eu.pdf,Approve,WITHIN_TOLERANCE_VARIANCE,Delta Cables Co,DC-88120,PO-1002,USD,4512.00,,false,synthetic,C,Total 0.27% over PO (within 1%) [eu],TC02,eu
+TC03__altlayout,stress/invoices/TC03__altlayout.pdf,Needs review,AMOUNT_OVER_TOLERANCE;UNIT_PRICE_MISMATCH,Acme Supplies Ltd,4471,PO-1023,USD,47500.00,,false,synthetic,B,"Total over PO (47,500 vs 45,000) [altlayout]",TC03,altlayout
+TC03__noisy,stress/invoices/TC03__noisy.pdf,Needs review,AMOUNT_OVER_TOLERANCE;UNIT_PRICE_MISMATCH,Acme Supplies Ltd,4471,PO-1023,USD,47500.00,,false,synthetic,A,"Total over PO (47,500 vs 45,000) [noisy]",TC03,noisy
+TC03__eu,stress/invoices/TC03__eu.pdf,Needs review,AMOUNT_OVER_TOLERANCE;UNIT_PRICE_MISMATCH,Acme Supplies Ltd,4471,PO-1023,USD,47500.00,,false,synthetic,A,"Total over PO (47,500 vs 45,000) [eu]",TC03,eu
+TC04__altlayout,stress/invoices/TC04__altlayout.pdf,Needs review,QUANTITY_EXCEEDS_PO;AMOUNT_OVER_TOLERANCE,Summit Packaging,SP-20417,PO-1004,USD,1920.00,,false,synthetic,C,"Billed 55 units, PO says 50 [altlayout]",TC04,altlayout
+TC04__noisy,stress/invoices/TC04__noisy.pdf,Needs review,QUANTITY_EXCEEDS_PO;AMOUNT_OVER_TOLERANCE,Summit Packaging,SP-20417,PO-1004,USD,1920.00,,false,synthetic,B,"Billed 55 units, PO says 50 [noisy]",TC04,noisy
+TC04__eu,stress/invoices/TC04__eu.pdf,Needs review,QUANTITY_EXCEEDS_PO;AMOUNT_OVER_TOLERANCE,Summit Packaging,SP-20417,PO-1004,USD,1920.00,,false,synthetic,B,"Billed 55 units, PO says 50 [eu]",TC04,eu
+TC05__altlayout,stress/invoices/TC05__altlayout.pdf,Reject (hold),EXACT_DUPLICATE,Keystone IT Services,INV-7788,PO-1005,USD,1900.00,,false,synthetic,B,Exact duplicate of a confirmed invoice [altlayout],TC05,altlayout
+TC05__noisy,stress/invoices/TC05__noisy.pdf,Reject (hold),EXACT_DUPLICATE,Keystone IT Services,INV-7788,PO-1005,USD,1900.00,,false,synthetic,A,Exact duplicate of a confirmed invoice [noisy],TC05,noisy
+TC05__eu,stress/invoices/TC05__eu.pdf,Reject (hold),EXACT_DUPLICATE,Keystone IT Services,INV-7788,PO-1005,USD,1900.00,,false,synthetic,A,Exact duplicate of a confirmed invoice [eu],TC05,eu
+TC06__altlayout,stress/invoices/TC06__altlayout.pdf,Needs review,POSSIBLE_DUPLICATE,Delta Cables Co,DC-88205,PO-1006,USD,800.00,,false,synthetic,A,"Same vendor, total and date; different number [altlayout]",TC06,altlayout
+TC06__noisy,stress/invoices/TC06__noisy.pdf,Needs review,POSSIBLE_DUPLICATE,Delta Cables Co,DC-88205,PO-1006,USD,800.00,,false,synthetic,C,"Same vendor, total and date; different number [noisy]",TC06,noisy
+TC06__eu,stress/invoices/TC06__eu.pdf,Needs review,POSSIBLE_DUPLICATE,Delta Cables Co,DC-88205,PO-1006,USD,800.00,,false,synthetic,C,"Same vendor, total and date; different number [eu]",TC06,eu
+TC07__altlayout,stress/invoices/TC07__altlayout.pdf,Needs review,PO_MISSING_ON_INVOICE,Orbit Office Furniture,INV-5107,,USD,1300.00,,false,synthetic,B,No PO number on invoice [altlayout],TC07,altlayout
+TC07__noisy,stress/invoices/TC07__noisy.pdf,Needs review,PO_MISSING_ON_INVOICE,Orbit Office Furniture,INV-5107,,USD,1300.00,,false,synthetic,A,No PO number on invoice [noisy],TC07,noisy
+TC07__eu,stress/invoices/TC07__eu.pdf,Needs review,PO_MISSING_ON_INVOICE,Orbit Office Furniture,INV-5107,,USD,1300.00,,false,synthetic,A,No PO number on invoice [eu],TC07,eu
+TC08__altlayout,stress/invoices/TC08__altlayout.pdf,Reject (hold),PO_NOT_FOUND,Summit Packaging,SP-20433,PO-9999,USD,950.00,,false,synthetic,C,PO number not in system [altlayout],TC08,altlayout
+TC08__noisy,stress/invoices/TC08__noisy.pdf,Reject (hold),PO_NOT_FOUND,Summit Packaging,SP-20433,PO-9999,USD,950.00,,false,synthetic,B,PO number not in system [noisy],TC08,noisy
+TC08__eu,stress/invoices/TC08__eu.pdf,Reject (hold),PO_NOT_FOUND,Summit Packaging,SP-20433,PO-9999,USD,950.00,,false,synthetic,B,PO number not in system [eu],TC08,eu
+TC09__altlayout,stress/invoices/TC09__altlayout.pdf,Approve,,Northbridge Stationery,NB-30991,PO-1009,USD,1450.00,,false,synthetic,C,"Different layout, data matches PO [altlayout]",TC09,altlayout
+TC09__noisy,stress/invoices/TC09__noisy.pdf,Approve,,Northbridge Stationery,NB-30991,PO-1009,USD,1450.00,,false,synthetic,B,"Different layout, data matches PO [noisy]",TC09,noisy
+TC09__eu,stress/invoices/TC09__eu.pdf,Approve,,Northbridge Stationery,NB-30991,PO-1009,USD,1450.00,,false,synthetic,B,"Different layout, data matches PO [eu]",TC09,eu
+TC10__altlayout,stress/invoices/TC10__altlayout.pdf,Needs review,FIELD_NOT_FOUND,Northbridge Stationery,NB-31044,PO-1010,USD,,total,false,synthetic,B,Total missing from the document [altlayout],TC10,altlayout
+TC10__noisy,stress/invoices/TC10__noisy.pdf,Needs review,FIELD_NOT_FOUND,Northbridge Stationery,NB-31044,PO-1010,USD,,total,false,synthetic,A,Total missing from the document [noisy],TC10,noisy
+TC10__eu,stress/invoices/TC10__eu.pdf,Needs review,FIELD_NOT_FOUND,Northbridge Stationery,NB-31044,PO-1010,USD,,total,false,synthetic,A,Total missing from the document [eu],TC10,eu
+TC11__altlayout,stress/invoices/TC11__altlayout.pdf,Needs review,CURRENCY_MISMATCH,Rhein Industrial GmbH,RI-2026-117,PO-1011,EUR,1000.00,,false,synthetic,C,EUR invoice against USD PO [altlayout],TC11,altlayout
+TC11__noisy,stress/invoices/TC11__noisy.pdf,Needs review,CURRENCY_MISMATCH,Rhein Industrial GmbH,RI-2026-117,PO-1011,EUR,1000.00,,false,synthetic,B,EUR invoice against USD PO [noisy],TC11,noisy
+TC11__eu,stress/invoices/TC11__eu.pdf,Needs review,CURRENCY_MISMATCH,Rhein Industrial GmbH,RI-2026-117,PO-1011,EUR,1000.00,,false,synthetic,B,EUR invoice against USD PO [eu],TC11,eu
+TC12__altlayout,stress/invoices/TC12__altlayout.pdf,Needs review,SUSPICIOUS_TEXT;AMOUNT_OVER_TOLERANCE;UNIT_PRICE_MISMATCH,Summit Packaging,SP-20461,PO-1012,USD,1040.00,,true,synthetic,B,Hidden instruction plus over-tolerance amount [altlayout],TC12,altlayout
+TC12__noisy,stress/invoices/TC12__noisy.pdf,Needs review,SUSPICIOUS_TEXT;AMOUNT_OVER_TOLERANCE;UNIT_PRICE_MISMATCH,Summit Packaging,SP-20461,PO-1012,USD,1040.00,,true,synthetic,A,Hidden instruction plus over-tolerance amount [noisy],TC12,noisy
+TC12__eu,stress/invoices/TC12__eu.pdf,Needs review,SUSPICIOUS_TEXT;AMOUNT_OVER_TOLERANCE;UNIT_PRICE_MISMATCH,Summit Packaging,SP-20461,PO-1012,USD,1040.00,,true,synthetic,A,Hidden instruction plus over-tolerance amount [eu],TC12,eu

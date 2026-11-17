@@ -1,0 +1,22 @@
+{
+  "vendor_name": "Delta Cables Co",
+  "invoice_number": "DC-88120",
+  "invoice_date": "2026-10-08",
+  "po_number": "PO-1002",
+  "currency": "USD",
+  "line_items": [
+    {
+      "description": "Cat6 cable box",
+      "quantity": 40,
+      "unit_price": 62.8,
+      "amount": 2512.0
+    },
+    {
+      "description": "Patch panel",
+      "quantity": 10,
+      "unit_price": 200.0,
+      "amount": 2000.0
+    }
+  ],
+  "total": 4512.0
+}

@@ -1,0 +1,23 @@
+Run 092f332b5d06 | mode: mock
+RESULT: REJECT (HOLD)   (confidence: high, human confirmation required)
+Invoice INV-5001 | Orbit Office Furniture | PO: PO-1001 | total: 6900.00 USD
+Findings:
+  [block] EXACT_DUPLICATE: Invoice INV-5001 from Orbit Office Furniture was already processed on 2026-11-14T08:37:35+00:00.
+
+--- Draft vendor email (not sent) ---
+Subject: Invoice INV-5001: clarification needed
+
+Hi Orbit Office Furniture team,
+
+We received invoice INV-5001 dated 2026-10-05 and checked it against our records.
+
+- Our records show that invoice INV-5001 was already received.
+
+We are holding this invoice until this is resolved.
+
+Thanks,
+[Sender name]
+--- end draft ---
+
+Time: 12 ms (extraction 0 ms, rules 0 ms, rate-limit wait 0 ms)
+Next: python -m ap.cli confirm 092f332b5d06 --decision approve|hold|reject

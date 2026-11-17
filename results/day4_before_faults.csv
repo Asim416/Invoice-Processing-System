@@ -1,0 +1,725 @@
+attempts,base_case,case,codes,codes_ok,confidence,data_ok,email,error,expected,extracted_none,fault,fault_name,got,ms,ok_currency,ok_invoice_date,ok_invoice_number,ok_po_number,ok_total,ok_vendor_name,outcome,suspicious,tokens,total_value,transient,variant,wait_ms
+2,TC01,TC01,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F01,total_digit_error,Needs review,10,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+2,TC02,TC02,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F01,total_digit_error,Needs review,6,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+2,TC03,TC03,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F01,total_digit_error,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC04,TC04,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F01,total_digit_error,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC05,TC05,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F01,total_digit_error,Needs review,7,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,base,0
+2,TC06,TC06,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F01,total_digit_error,Needs review,5,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC07,TC07,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F01,total_digit_error,Needs review,6,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC08,TC08,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F01,total_digit_error,Needs review,6,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,base,0
+2,TC09,TC09,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F01,total_digit_error,Needs review,7,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+2,TC11,TC11,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F01,total_digit_error,Needs review,6,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC12,TC12,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F01,total_digit_error,Needs review,11,False,False,False,False,False,False,CORRECT,True,0,,False,base,0
+2,TC01,TC01__altlayout,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F01,total_digit_error,Needs review,7,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+2,TC01,TC01__noisy,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F01,total_digit_error,Needs review,12,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+2,TC01,TC01__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F01,total_digit_error,Needs review,7,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+2,TC02,TC02__altlayout,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F01,total_digit_error,Needs review,9,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+2,TC02,TC02__noisy,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F01,total_digit_error,Needs review,11,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+2,TC02,TC02__eu,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F01,total_digit_error,Needs review,6,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+2,TC03,TC03__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F01,total_digit_error,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC03,TC03__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F01,total_digit_error,Needs review,14,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC03,TC03__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F01,total_digit_error,Needs review,24,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC04,TC04__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F01,total_digit_error,Needs review,6,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC04,TC04__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F01,total_digit_error,Needs review,12,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC04,TC04__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F01,total_digit_error,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC05,TC05__altlayout,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F01,total_digit_error,Needs review,6,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,altlayout,0
+2,TC05,TC05__noisy,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F01,total_digit_error,Needs review,16,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,noisy,0
+2,TC05,TC05__eu,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F01,total_digit_error,Needs review,8,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,eu,0
+2,TC06,TC06__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F01,total_digit_error,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC06,TC06__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F01,total_digit_error,Needs review,16,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC06,TC06__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F01,total_digit_error,Needs review,6,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC07,TC07__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F01,total_digit_error,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC07,TC07__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F01,total_digit_error,Needs review,15,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC07,TC07__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F01,total_digit_error,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC08,TC08__altlayout,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F01,total_digit_error,Needs review,9,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,altlayout,0
+2,TC08,TC08__noisy,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F01,total_digit_error,Needs review,15,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,noisy,0
+2,TC08,TC08__eu,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F01,total_digit_error,Needs review,8,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,eu,0
+2,TC09,TC09__altlayout,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F01,total_digit_error,Needs review,8,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+2,TC09,TC09__noisy,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F01,total_digit_error,Needs review,19,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+2,TC09,TC09__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F01,total_digit_error,Needs review,9,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+2,TC11,TC11__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F01,total_digit_error,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC11,TC11__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F01,total_digit_error,Needs review,13,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC11,TC11__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F01,total_digit_error,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC12,TC12__altlayout,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F01,total_digit_error,Needs review,12,False,False,False,False,False,False,CORRECT,True,0,,False,altlayout,0
+2,TC12,TC12__noisy,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F01,total_digit_error,Needs review,15,False,False,False,False,False,False,CORRECT,True,0,,False,noisy,0
+2,TC12,TC12__eu,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F01,total_digit_error,Needs review,10,False,False,False,False,False,False,CORRECT,True,0,,False,eu,0
+2,TC01,TC01,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F02,total_is_a_line,Needs review,8,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+2,TC02,TC02,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F02,total_is_a_line,Needs review,7,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+2,TC03,TC03,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F02,total_is_a_line,Needs review,10,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC04,TC04,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F02,total_is_a_line,Needs review,10,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC09,TC09,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F02,total_is_a_line,Needs review,12,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+2,TC10,TC10,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F02,total_is_a_line,Needs review,11,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC01,TC01__altlayout,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F02,total_is_a_line,Needs review,11,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+2,TC01,TC01__noisy,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F02,total_is_a_line,Needs review,23,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+2,TC01,TC01__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F02,total_is_a_line,Needs review,11,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+2,TC02,TC02__altlayout,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F02,total_is_a_line,Needs review,12,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+2,TC02,TC02__noisy,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F02,total_is_a_line,Needs review,19,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+2,TC02,TC02__eu,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F02,total_is_a_line,Needs review,10,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+2,TC03,TC03__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F02,total_is_a_line,Needs review,10,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC03,TC03__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F02,total_is_a_line,Needs review,13,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC03,TC03__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F02,total_is_a_line,Needs review,9,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC04,TC04__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F02,total_is_a_line,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC04,TC04__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F02,total_is_a_line,Needs review,17,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC04,TC04__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F02,total_is_a_line,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC09,TC09__altlayout,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F02,total_is_a_line,Needs review,7,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+2,TC09,TC09__noisy,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F02,total_is_a_line,Needs review,17,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+2,TC09,TC09__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F02,total_is_a_line,Needs review,8,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+2,TC10,TC10__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F02,total_is_a_line,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC10,TC10__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F02,total_is_a_line,Needs review,19,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC10,TC10__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F02,total_is_a_line,Needs review,10,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC01,TC01,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F03,line_dropped,Needs review,8,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+2,TC02,TC02,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F03,line_dropped,Needs review,7,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+2,TC03,TC03,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F03,line_dropped,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC04,TC04,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F03,line_dropped,Needs review,10,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC09,TC09,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F03,line_dropped,Needs review,30,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+1,TC10,TC10,FIELD_NOT_FOUND,True,high,True,False,,Needs review,False,F03,line_dropped,Needs review,8,True,True,True,True,True,True,CORRECT,False,0,,False,base,0
+2,TC01,TC01__altlayout,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F03,line_dropped,Needs review,9,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+2,TC01,TC01__noisy,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F03,line_dropped,Needs review,38,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+2,TC01,TC01__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F03,line_dropped,Needs review,21,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+2,TC02,TC02__altlayout,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F03,line_dropped,Needs review,20,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+2,TC02,TC02__noisy,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F03,line_dropped,Needs review,32,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+2,TC02,TC02__eu,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F03,line_dropped,Needs review,9,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+2,TC03,TC03__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F03,line_dropped,Needs review,13,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC03,TC03__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F03,line_dropped,Needs review,21,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC03,TC03__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F03,line_dropped,Needs review,16,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC04,TC04__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F03,line_dropped,Needs review,10,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC04,TC04__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F03,line_dropped,Needs review,18,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC04,TC04__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F03,line_dropped,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC09,TC09__altlayout,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F03,line_dropped,Needs review,8,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+2,TC09,TC09__noisy,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F03,line_dropped,Needs review,23,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+2,TC09,TC09__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F03,line_dropped,Needs review,8,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+1,TC10,TC10__altlayout,FIELD_NOT_FOUND,True,high,True,False,,Needs review,False,F03,line_dropped,Needs review,8,True,True,True,True,True,True,CORRECT,False,0,,False,altlayout,0
+1,TC10,TC10__noisy,FIELD_NOT_FOUND,True,high,True,False,,Needs review,False,F03,line_dropped,Needs review,14,True,True,True,True,True,True,CORRECT,False,0,,False,noisy,0
+1,TC10,TC10__eu,FIELD_NOT_FOUND;LOW_CONFIDENCE_EXTRACTION,True,low,True,False,,Needs review,False,F03,line_dropped,Needs review,8,True,True,True,True,True,True,CORRECT,False,0,,False,eu,0
+2,TC01,TC01,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F04,columns_shifted,Needs review,11,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+2,TC02,TC02,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F04,columns_shifted,Needs review,6,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+2,TC03,TC03,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F04,columns_shifted,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC04,TC04,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F04,columns_shifted,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC05,TC05,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F04,columns_shifted,Needs review,7,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,base,0
+2,TC06,TC06,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F04,columns_shifted,Needs review,6,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC07,TC07,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F04,columns_shifted,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC08,TC08,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F04,columns_shifted,Needs review,9,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,base,0
+2,TC09,TC09,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F04,columns_shifted,Needs review,8,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+2,TC10,TC10,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F04,columns_shifted,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC11,TC11,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F04,columns_shifted,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC12,TC12,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F04,columns_shifted,Needs review,11,False,False,False,False,False,False,CORRECT,True,0,,False,base,0
+2,TC01,TC01__altlayout,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F04,columns_shifted,Needs review,9,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+2,TC01,TC01__noisy,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F04,columns_shifted,Needs review,18,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+2,TC01,TC01__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F04,columns_shifted,Needs review,8,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+2,TC02,TC02__altlayout,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F04,columns_shifted,Needs review,9,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+2,TC02,TC02__noisy,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F04,columns_shifted,Needs review,13,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+2,TC02,TC02__eu,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F04,columns_shifted,Needs review,9,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+2,TC03,TC03__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F04,columns_shifted,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC03,TC03__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F04,columns_shifted,Needs review,15,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC03,TC03__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F04,columns_shifted,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC04,TC04__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F04,columns_shifted,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC04,TC04__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F04,columns_shifted,Needs review,16,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC04,TC04__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F04,columns_shifted,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC05,TC05__altlayout,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F04,columns_shifted,Needs review,8,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,altlayout,0
+2,TC05,TC05__noisy,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F04,columns_shifted,Needs review,14,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,noisy,0
+2,TC05,TC05__eu,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F04,columns_shifted,Needs review,7,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,eu,0
+2,TC06,TC06__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F04,columns_shifted,Needs review,10,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC06,TC06__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F04,columns_shifted,Needs review,15,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC06,TC06__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F04,columns_shifted,Needs review,5,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC07,TC07__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F04,columns_shifted,Needs review,5,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC07,TC07__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F04,columns_shifted,Needs review,11,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC07,TC07__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F04,columns_shifted,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC08,TC08__altlayout,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F04,columns_shifted,Needs review,24,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,altlayout,0
+2,TC08,TC08__noisy,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F04,columns_shifted,Needs review,11,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,noisy,0
+2,TC08,TC08__eu,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F04,columns_shifted,Needs review,5,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,eu,0
+2,TC09,TC09__altlayout,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F04,columns_shifted,Needs review,6,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+2,TC09,TC09__noisy,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F04,columns_shifted,Needs review,11,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+2,TC09,TC09__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F04,columns_shifted,Needs review,6,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+2,TC10,TC10__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F04,columns_shifted,Needs review,6,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC10,TC10__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F04,columns_shifted,Needs review,14,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC10,TC10__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F04,columns_shifted,Needs review,6,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC11,TC11__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F04,columns_shifted,Needs review,6,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC11,TC11__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F04,columns_shifted,Needs review,12,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC11,TC11__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F04,columns_shifted,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC12,TC12__altlayout,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F04,columns_shifted,Needs review,10,False,False,False,False,False,False,CORRECT,True,0,,False,altlayout,0
+2,TC12,TC12__noisy,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F04,columns_shifted,Needs review,15,False,False,False,False,False,False,CORRECT,True,0,,False,noisy,0
+2,TC12,TC12__eu,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F04,columns_shifted,Needs review,10,False,False,False,False,False,False,CORRECT,True,0,,False,eu,0
+1,TC01,TC01__noisy,,True,high,False,False,,Approve,False,F05,vendor_is_customer,Approve,14,True,True,True,True,True,False,WRONG_DATA_APPROVED,False,0,6900.00,False,noisy,0
+1,TC02,TC02__noisy,WITHIN_TOLERANCE_VARIANCE,True,high,False,False,,Approve,False,F05,vendor_is_customer,Approve,11,True,True,True,True,True,False,WRONG_DATA_APPROVED,False,0,4512.00,False,noisy,0
+1,TC03,TC03__noisy,AMOUNT_OVER_TOLERANCE;UNIT_PRICE_MISMATCH,True,high,False,True,,Needs review,False,F05,vendor_is_customer,Needs review,13,True,True,True,True,True,False,CORRECT,False,0,47500.00,False,noisy,0
+1,TC04,TC04__noisy,AMOUNT_OVER_TOLERANCE;QUANTITY_EXCEEDS_PO,True,high,False,True,,Needs review,False,F05,vendor_is_customer,Needs review,24,True,True,True,True,True,False,CORRECT,False,0,1920.00,False,noisy,0
+1,TC05,TC05__noisy,,False,high,False,False,,Reject (hold),False,F05,vendor_is_customer,Approve,21,True,True,True,True,True,False,CRITICAL_MISS,False,0,1900.00,False,noisy,0
+1,TC06,TC06__noisy,,False,high,False,False,,Needs review,False,F05,vendor_is_customer,Approve,10,True,True,True,True,True,False,CRITICAL_MISS,False,0,800.00,False,noisy,0
+1,TC07,TC07__noisy,PO_MISSING_ON_INVOICE,True,high,False,True,,Needs review,False,F05,vendor_is_customer,Needs review,14,True,True,True,True,True,False,CORRECT,False,0,1300.00,False,noisy,0
+1,TC08,TC08__noisy,PO_NOT_FOUND,True,high,False,True,,Reject (hold),False,F05,vendor_is_customer,Reject (hold),12,True,True,True,True,True,False,CORRECT,False,0,950.00,False,noisy,0
+1,TC09,TC09__noisy,,True,high,False,False,,Approve,False,F05,vendor_is_customer,Approve,13,True,True,True,True,True,False,WRONG_DATA_APPROVED,False,0,1450.00,False,noisy,0
+1,TC10,TC10__noisy,FIELD_NOT_FOUND,True,high,False,False,,Needs review,False,F05,vendor_is_customer,Needs review,14,True,True,True,True,True,False,CORRECT,False,0,,False,noisy,0
+1,TC11,TC11__noisy,CURRENCY_MISMATCH,True,high,False,True,,Needs review,False,F05,vendor_is_customer,Needs review,12,True,True,True,True,True,False,CORRECT,False,0,1000.00,False,noisy,0
+1,TC12,TC12__noisy,AMOUNT_OVER_TOLERANCE;SUSPICIOUS_TEXT;UNIT_PRICE_MISMATCH,True,high,False,True,,Needs review,False,F05,vendor_is_customer,Needs review,16,True,True,True,True,True,False,CORRECT,True,0,1040.00,False,noisy,0
+1,TC01,TC01,,True,high,False,False,,Approve,False,F06,invoice_no_is_po,Approve,7,True,True,False,True,True,True,WRONG_DATA_APPROVED,False,0,6900.00,False,base,0
+1,TC02,TC02,WITHIN_TOLERANCE_VARIANCE,True,high,False,False,,Approve,False,F06,invoice_no_is_po,Approve,6,True,True,False,True,True,True,WRONG_DATA_APPROVED,False,0,4512.00,False,base,0
+1,TC03,TC03,AMOUNT_OVER_TOLERANCE;UNIT_PRICE_MISMATCH,True,high,False,True,,Needs review,False,F06,invoice_no_is_po,Needs review,7,True,True,False,True,True,True,CORRECT,False,0,47500.00,False,base,0
+1,TC04,TC04,AMOUNT_OVER_TOLERANCE;QUANTITY_EXCEEDS_PO,True,high,False,True,,Needs review,False,F06,invoice_no_is_po,Needs review,7,True,True,False,True,True,True,CORRECT,False,0,1920.00,False,base,0
+1,TC05,TC05,POSSIBLE_DUPLICATE,False,high,False,True,,Reject (hold),False,F06,invoice_no_is_po,Needs review,6,True,True,False,True,True,True,UNDER_FLAG,False,0,1900.00,False,base,0
+1,TC06,TC06,POSSIBLE_DUPLICATE,True,high,False,True,,Needs review,False,F06,invoice_no_is_po,Needs review,7,True,True,False,True,True,True,CORRECT,False,0,800.00,False,base,0
+1,TC08,TC08,PO_NOT_FOUND,True,high,False,True,,Reject (hold),False,F06,invoice_no_is_po,Reject (hold),6,True,True,False,True,True,True,CORRECT,False,0,950.00,False,base,0
+1,TC09,TC09,,True,high,False,False,,Approve,False,F06,invoice_no_is_po,Approve,7,True,True,False,True,True,True,WRONG_DATA_APPROVED,False,0,1450.00,False,base,0
+1,TC10,TC10,FIELD_NOT_FOUND,True,high,False,False,,Needs review,False,F06,invoice_no_is_po,Needs review,7,True,True,False,True,True,True,CORRECT,False,0,,False,base,0
+1,TC11,TC11,CURRENCY_MISMATCH,True,high,False,True,,Needs review,False,F06,invoice_no_is_po,Needs review,6,True,True,False,True,True,True,CORRECT,False,0,1000.00,False,base,0
+1,TC12,TC12,AMOUNT_OVER_TOLERANCE;SUSPICIOUS_TEXT;UNIT_PRICE_MISMATCH,True,high,False,True,,Needs review,False,F06,invoice_no_is_po,Needs review,8,True,True,False,True,True,True,CORRECT,True,0,1040.00,False,base,0
+1,TC01,TC01__altlayout,,True,high,False,False,,Approve,False,F06,invoice_no_is_po,Approve,9,True,True,False,True,True,True,WRONG_DATA_APPROVED,False,0,6900.00,False,altlayout,0
+1,TC01,TC01__noisy,,True,high,False,False,,Approve,False,F06,invoice_no_is_po,Approve,12,True,True,False,True,True,True,WRONG_DATA_APPROVED,False,0,6900.00,False,noisy,0
+2,TC01,TC01__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F06,invoice_no_is_po,Needs review,12,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+1,TC02,TC02__altlayout,WITHIN_TOLERANCE_VARIANCE,True,high,False,False,,Approve,False,F06,invoice_no_is_po,Approve,9,True,True,False,True,True,True,WRONG_DATA_APPROVED,False,0,4512.00,False,altlayout,0
+1,TC02,TC02__noisy,WITHIN_TOLERANCE_VARIANCE,True,high,False,False,,Approve,False,F06,invoice_no_is_po,Approve,17,True,True,False,True,True,True,WRONG_DATA_APPROVED,False,0,4512.00,False,noisy,0
+2,TC02,TC02__eu,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F06,invoice_no_is_po,Needs review,29,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+1,TC03,TC03__altlayout,AMOUNT_OVER_TOLERANCE;UNIT_PRICE_MISMATCH,True,high,False,True,,Needs review,False,F06,invoice_no_is_po,Needs review,8,True,True,False,True,True,True,CORRECT,False,0,47500.00,False,altlayout,0
+1,TC03,TC03__noisy,AMOUNT_OVER_TOLERANCE;UNIT_PRICE_MISMATCH,True,high,False,True,,Needs review,False,F06,invoice_no_is_po,Needs review,15,True,True,False,True,True,True,CORRECT,False,0,47500.00,False,noisy,0
+2,TC03,TC03__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F06,invoice_no_is_po,Needs review,9,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+1,TC04,TC04__altlayout,AMOUNT_OVER_TOLERANCE;QUANTITY_EXCEEDS_PO,True,high,False,True,,Needs review,False,F06,invoice_no_is_po,Needs review,7,True,True,False,True,True,True,CORRECT,False,0,1920.00,False,altlayout,0
+1,TC04,TC04__noisy,AMOUNT_OVER_TOLERANCE;QUANTITY_EXCEEDS_PO,True,high,False,True,,Needs review,False,F06,invoice_no_is_po,Needs review,14,True,True,False,True,True,True,CORRECT,False,0,1920.00,False,noisy,0
+2,TC04,TC04__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F06,invoice_no_is_po,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+1,TC05,TC05__altlayout,POSSIBLE_DUPLICATE,False,high,False,True,,Reject (hold),False,F06,invoice_no_is_po,Needs review,7,True,True,False,True,True,True,UNDER_FLAG,False,0,1900.00,False,altlayout,0
+1,TC05,TC05__noisy,POSSIBLE_DUPLICATE,False,high,False,True,,Reject (hold),False,F06,invoice_no_is_po,Needs review,16,True,True,False,True,True,True,UNDER_FLAG,False,0,1900.00,False,noisy,0
+2,TC05,TC05__eu,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F06,invoice_no_is_po,Needs review,7,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,eu,0
+1,TC06,TC06__altlayout,POSSIBLE_DUPLICATE,True,high,False,True,,Needs review,False,F06,invoice_no_is_po,Needs review,7,True,True,False,True,True,True,CORRECT,False,0,800.00,False,altlayout,0
+1,TC06,TC06__noisy,POSSIBLE_DUPLICATE,True,high,False,True,,Needs review,False,F06,invoice_no_is_po,Needs review,12,True,True,False,True,True,True,CORRECT,False,0,800.00,False,noisy,0
+1,TC06,TC06__eu,LOW_CONFIDENCE_EXTRACTION;POSSIBLE_DUPLICATE,True,low,False,True,,Needs review,False,F06,invoice_no_is_po,Needs review,8,True,True,False,True,True,True,CORRECT,False,0,800.00,False,eu,0
+1,TC08,TC08__altlayout,PO_NOT_FOUND,True,high,False,True,,Reject (hold),False,F06,invoice_no_is_po,Reject (hold),6,True,True,False,True,True,True,CORRECT,False,0,950.00,False,altlayout,0
+1,TC08,TC08__noisy,PO_NOT_FOUND,True,high,False,True,,Reject (hold),False,F06,invoice_no_is_po,Reject (hold),13,True,True,False,True,True,True,CORRECT,False,0,950.00,False,noisy,0
+1,TC08,TC08__eu,LOW_CONFIDENCE_EXTRACTION;PO_NOT_FOUND,True,low,False,True,,Reject (hold),False,F06,invoice_no_is_po,Reject (hold),7,True,True,False,True,True,True,CORRECT,False,0,950.00,False,eu,0
+1,TC09,TC09__altlayout,,True,high,False,False,,Approve,False,F06,invoice_no_is_po,Approve,7,True,True,False,True,True,True,WRONG_DATA_APPROVED,False,0,1450.00,False,altlayout,0
+1,TC09,TC09__noisy,,True,high,False,False,,Approve,False,F06,invoice_no_is_po,Approve,15,True,True,False,True,True,True,WRONG_DATA_APPROVED,False,0,1450.00,False,noisy,0
+2,TC09,TC09__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F06,invoice_no_is_po,Needs review,8,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+1,TC10,TC10__altlayout,FIELD_NOT_FOUND,True,high,False,False,,Needs review,False,F06,invoice_no_is_po,Needs review,7,True,True,False,True,True,True,CORRECT,False,0,,False,altlayout,0
+1,TC10,TC10__noisy,FIELD_NOT_FOUND,True,high,False,False,,Needs review,False,F06,invoice_no_is_po,Needs review,14,True,True,False,True,True,True,CORRECT,False,0,,False,noisy,0
+1,TC10,TC10__eu,FIELD_NOT_FOUND;LOW_CONFIDENCE_EXTRACTION,True,low,False,False,,Needs review,False,F06,invoice_no_is_po,Needs review,8,True,True,False,True,True,True,CORRECT,False,0,,False,eu,0
+1,TC11,TC11__altlayout,CURRENCY_MISMATCH,True,high,False,True,,Needs review,False,F06,invoice_no_is_po,Needs review,8,True,True,False,True,True,True,CORRECT,False,0,1000.00,False,altlayout,0
+1,TC11,TC11__noisy,CURRENCY_MISMATCH,True,high,False,True,,Needs review,False,F06,invoice_no_is_po,Needs review,13,True,True,False,True,True,True,CORRECT,False,0,1000.00,False,noisy,0
+2,TC11,TC11__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F06,invoice_no_is_po,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+1,TC12,TC12__altlayout,AMOUNT_OVER_TOLERANCE;SUSPICIOUS_TEXT;UNIT_PRICE_MISMATCH,True,high,False,True,,Needs review,False,F06,invoice_no_is_po,Needs review,9,True,True,False,True,True,True,CORRECT,True,0,1040.00,False,altlayout,0
+1,TC12,TC12__noisy,AMOUNT_OVER_TOLERANCE;SUSPICIOUS_TEXT;UNIT_PRICE_MISMATCH,True,high,False,True,,Needs review,False,F06,invoice_no_is_po,Needs review,18,True,True,False,True,True,True,CORRECT,True,0,1040.00,False,noisy,0
+2,TC12,TC12__eu,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F06,invoice_no_is_po,Needs review,9,False,False,False,False,False,False,CORRECT,True,0,,False,eu,0
+2,TC01,TC01,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F07,po_hallucinated,Needs review,8,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+2,TC02,TC02,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F07,po_hallucinated,Needs review,7,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+2,TC03,TC03,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F07,po_hallucinated,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC04,TC04,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F07,po_hallucinated,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC05,TC05,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F07,po_hallucinated,Needs review,10,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,base,0
+2,TC06,TC06,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F07,po_hallucinated,Needs review,5,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC07,TC07,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F07,po_hallucinated,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC08,TC08,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F07,po_hallucinated,Needs review,7,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,base,0
+2,TC09,TC09,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F07,po_hallucinated,Needs review,8,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+2,TC10,TC10,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F07,po_hallucinated,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC11,TC11,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F07,po_hallucinated,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC12,TC12,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F07,po_hallucinated,Needs review,12,False,False,False,False,False,False,CORRECT,True,0,,False,base,0
+2,TC01,TC01__altlayout,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F07,po_hallucinated,Needs review,8,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+2,TC01,TC01__noisy,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F07,po_hallucinated,Needs review,16,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+2,TC01,TC01__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F07,po_hallucinated,Needs review,9,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+2,TC02,TC02__altlayout,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F07,po_hallucinated,Needs review,9,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+2,TC02,TC02__noisy,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F07,po_hallucinated,Needs review,16,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+2,TC02,TC02__eu,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F07,po_hallucinated,Needs review,7,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+2,TC03,TC03__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F07,po_hallucinated,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC03,TC03__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F07,po_hallucinated,Needs review,16,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC03,TC03__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F07,po_hallucinated,Needs review,12,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC04,TC04__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F07,po_hallucinated,Needs review,6,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC04,TC04__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F07,po_hallucinated,Needs review,14,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC04,TC04__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F07,po_hallucinated,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC05,TC05__altlayout,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F07,po_hallucinated,Needs review,7,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,altlayout,0
+2,TC05,TC05__noisy,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F07,po_hallucinated,Needs review,47,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,noisy,0
+2,TC05,TC05__eu,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F07,po_hallucinated,Needs review,9,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,eu,0
+2,TC06,TC06__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F07,po_hallucinated,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC06,TC06__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F07,po_hallucinated,Needs review,16,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC06,TC06__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F07,po_hallucinated,Needs review,6,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC07,TC07__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F07,po_hallucinated,Needs review,6,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC07,TC07__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F07,po_hallucinated,Needs review,13,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC07,TC07__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F07,po_hallucinated,Needs review,9,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC08,TC08__altlayout,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F07,po_hallucinated,Needs review,5,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,altlayout,0
+2,TC08,TC08__noisy,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F07,po_hallucinated,Needs review,13,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,noisy,0
+2,TC08,TC08__eu,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F07,po_hallucinated,Needs review,6,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,eu,0
+2,TC09,TC09__altlayout,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F07,po_hallucinated,Needs review,11,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+2,TC09,TC09__noisy,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F07,po_hallucinated,Needs review,28,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+2,TC09,TC09__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F07,po_hallucinated,Needs review,14,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+2,TC10,TC10__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F07,po_hallucinated,Needs review,13,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC10,TC10__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F07,po_hallucinated,Needs review,24,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC10,TC10__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F07,po_hallucinated,Needs review,13,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC11,TC11__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F07,po_hallucinated,Needs review,9,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC11,TC11__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F07,po_hallucinated,Needs review,11,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC11,TC11__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F07,po_hallucinated,Needs review,6,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC12,TC12__altlayout,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F07,po_hallucinated,Needs review,9,False,False,False,False,False,False,CORRECT,True,0,,False,altlayout,0
+2,TC12,TC12__noisy,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F07,po_hallucinated,Needs review,18,False,False,False,False,False,False,CORRECT,True,0,,False,noisy,0
+2,TC12,TC12__eu,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F07,po_hallucinated,Needs review,9,False,False,False,False,False,False,CORRECT,True,0,,False,eu,0
+1,TC01,TC01,PO_MISSING_ON_INVOICE,True,high,False,True,,Approve,False,F08,po_missed,Needs review,8,True,True,True,False,True,True,DETECTED,False,0,6900.00,False,base,0
+1,TC02,TC02,PO_MISSING_ON_INVOICE,False,high,False,True,,Approve,False,F08,po_missed,Needs review,7,True,True,True,False,True,True,DETECTED,False,0,4512.00,False,base,0
+1,TC03,TC03,PO_MISSING_ON_INVOICE,False,high,False,True,,Needs review,False,F08,po_missed,Needs review,8,True,True,True,False,True,True,CORRECT,False,0,47500.00,False,base,0
+1,TC04,TC04,PO_MISSING_ON_INVOICE,False,high,False,True,,Needs review,False,F08,po_missed,Needs review,8,True,True,True,False,True,True,CORRECT,False,0,1920.00,False,base,0
+1,TC05,TC05,EXACT_DUPLICATE;PO_MISSING_ON_INVOICE,True,high,False,True,,Reject (hold),False,F08,po_missed,Reject (hold),10,True,True,True,False,True,True,CORRECT,False,0,1900.00,False,base,0
+1,TC06,TC06,POSSIBLE_DUPLICATE;PO_MISSING_ON_INVOICE,True,high,False,True,,Needs review,False,F08,po_missed,Needs review,6,True,True,True,False,True,True,CORRECT,False,0,800.00,False,base,0
+1,TC08,TC08,PO_MISSING_ON_INVOICE,False,high,False,True,,Reject (hold),False,F08,po_missed,Needs review,7,True,True,True,False,True,True,UNDER_FLAG,False,0,950.00,False,base,0
+1,TC09,TC09,PO_MISSING_ON_INVOICE,True,high,False,True,,Approve,False,F08,po_missed,Needs review,8,True,True,True,False,True,True,DETECTED,False,0,1450.00,False,base,0
+1,TC10,TC10,FIELD_NOT_FOUND;PO_MISSING_ON_INVOICE,True,high,False,True,,Needs review,False,F08,po_missed,Needs review,8,True,True,True,False,True,True,CORRECT,False,0,,False,base,0
+1,TC11,TC11,PO_MISSING_ON_INVOICE,False,high,False,True,,Needs review,False,F08,po_missed,Needs review,7,True,True,True,False,True,True,CORRECT,False,0,1000.00,False,base,0
+1,TC12,TC12,PO_MISSING_ON_INVOICE;SUSPICIOUS_TEXT,False,high,False,True,,Needs review,False,F08,po_missed,Needs review,12,True,True,True,False,True,True,CORRECT,True,0,1040.00,False,base,0
+1,TC01,TC01__altlayout,PO_MISSING_ON_INVOICE,True,high,False,True,,Approve,False,F08,po_missed,Needs review,8,True,True,True,False,True,True,DETECTED,False,0,6900.00,False,altlayout,0
+1,TC01,TC01__noisy,PO_MISSING_ON_INVOICE,True,high,False,True,,Approve,False,F08,po_missed,Needs review,15,True,True,True,False,True,True,DETECTED,False,0,6900.00,False,noisy,0
+2,TC01,TC01__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F08,po_missed,Needs review,10,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+1,TC02,TC02__altlayout,PO_MISSING_ON_INVOICE,False,high,False,True,,Approve,False,F08,po_missed,Needs review,8,True,True,True,False,True,True,DETECTED,False,0,4512.00,False,altlayout,0
+1,TC02,TC02__noisy,PO_MISSING_ON_INVOICE,False,high,False,True,,Approve,False,F08,po_missed,Needs review,14,True,True,True,False,True,True,DETECTED,False,0,4512.00,False,noisy,0
+2,TC02,TC02__eu,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F08,po_missed,Needs review,6,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+1,TC03,TC03__altlayout,PO_MISSING_ON_INVOICE,False,high,False,True,,Needs review,False,F08,po_missed,Needs review,7,True,True,True,False,True,True,CORRECT,False,0,47500.00,False,altlayout,0
+1,TC03,TC03__noisy,PO_MISSING_ON_INVOICE,False,high,False,True,,Needs review,False,F08,po_missed,Needs review,14,True,True,True,False,True,True,CORRECT,False,0,47500.00,False,noisy,0
+2,TC03,TC03__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F08,po_missed,Needs review,10,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+1,TC04,TC04__altlayout,PO_MISSING_ON_INVOICE,False,high,False,True,,Needs review,False,F08,po_missed,Needs review,6,True,True,True,False,True,True,CORRECT,False,0,1920.00,False,altlayout,0
+1,TC04,TC04__noisy,PO_MISSING_ON_INVOICE,False,high,False,True,,Needs review,False,F08,po_missed,Needs review,13,True,True,True,False,True,True,CORRECT,False,0,1920.00,False,noisy,0
+2,TC04,TC04__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F08,po_missed,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+1,TC05,TC05__altlayout,EXACT_DUPLICATE;PO_MISSING_ON_INVOICE,True,high,False,True,,Reject (hold),False,F08,po_missed,Reject (hold),7,True,True,True,False,True,True,CORRECT,False,0,1900.00,False,altlayout,0
+1,TC05,TC05__noisy,EXACT_DUPLICATE;PO_MISSING_ON_INVOICE,True,high,False,True,,Reject (hold),False,F08,po_missed,Reject (hold),15,True,True,True,False,True,True,CORRECT,False,0,1900.00,False,noisy,0
+2,TC05,TC05__eu,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F08,po_missed,Needs review,6,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,eu,0
+1,TC06,TC06__altlayout,POSSIBLE_DUPLICATE;PO_MISSING_ON_INVOICE,True,high,False,True,,Needs review,False,F08,po_missed,Needs review,7,True,True,True,False,True,True,CORRECT,False,0,800.00,False,altlayout,0
+1,TC06,TC06__noisy,POSSIBLE_DUPLICATE;PO_MISSING_ON_INVOICE,True,high,False,True,,Needs review,False,F08,po_missed,Needs review,11,True,True,True,False,True,True,CORRECT,False,0,800.00,False,noisy,0
+1,TC06,TC06__eu,LOW_CONFIDENCE_EXTRACTION;POSSIBLE_DUPLICATE;PO_MISSING_ON_INVOICE,True,low,False,True,,Needs review,False,F08,po_missed,Needs review,5,True,True,True,False,True,True,CORRECT,False,0,800.00,False,eu,0
+1,TC08,TC08__altlayout,PO_MISSING_ON_INVOICE,False,high,False,True,,Reject (hold),False,F08,po_missed,Needs review,5,True,True,True,False,True,True,UNDER_FLAG,False,0,950.00,False,altlayout,0
+1,TC08,TC08__noisy,PO_MISSING_ON_INVOICE,False,high,False,True,,Reject (hold),False,F08,po_missed,Needs review,43,True,True,True,False,True,True,UNDER_FLAG,False,0,950.00,False,noisy,0
+1,TC08,TC08__eu,LOW_CONFIDENCE_EXTRACTION;PO_MISSING_ON_INVOICE,False,low,False,True,,Reject (hold),False,F08,po_missed,Needs review,9,True,True,True,False,True,True,UNDER_FLAG,False,0,950.00,False,eu,0
+1,TC09,TC09__altlayout,PO_MISSING_ON_INVOICE,True,high,False,True,,Approve,False,F08,po_missed,Needs review,7,True,True,True,False,True,True,DETECTED,False,0,1450.00,False,altlayout,0
+1,TC09,TC09__noisy,PO_MISSING_ON_INVOICE,True,high,False,True,,Approve,False,F08,po_missed,Needs review,17,True,True,True,False,True,True,DETECTED,False,0,1450.00,False,noisy,0
+2,TC09,TC09__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F08,po_missed,Needs review,8,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+1,TC10,TC10__altlayout,FIELD_NOT_FOUND;PO_MISSING_ON_INVOICE,True,high,False,True,,Needs review,False,F08,po_missed,Needs review,8,True,True,True,False,True,True,CORRECT,False,0,,False,altlayout,0
+1,TC10,TC10__noisy,FIELD_NOT_FOUND;PO_MISSING_ON_INVOICE,True,high,False,True,,Needs review,False,F08,po_missed,Needs review,17,True,True,True,False,True,True,CORRECT,False,0,,False,noisy,0
+1,TC10,TC10__eu,FIELD_NOT_FOUND;LOW_CONFIDENCE_EXTRACTION;PO_MISSING_ON_INVOICE,True,low,False,True,,Needs review,False,F08,po_missed,Needs review,8,True,True,True,False,True,True,CORRECT,False,0,,False,eu,0
+1,TC11,TC11__altlayout,PO_MISSING_ON_INVOICE,False,high,False,True,,Needs review,False,F08,po_missed,Needs review,6,True,True,True,False,True,True,CORRECT,False,0,1000.00,False,altlayout,0
+1,TC11,TC11__noisy,PO_MISSING_ON_INVOICE,False,high,False,True,,Needs review,False,F08,po_missed,Needs review,13,True,True,True,False,True,True,CORRECT,False,0,1000.00,False,noisy,0
+2,TC11,TC11__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F08,po_missed,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+1,TC12,TC12__altlayout,PO_MISSING_ON_INVOICE;SUSPICIOUS_TEXT,False,high,False,True,,Needs review,False,F08,po_missed,Needs review,13,True,True,True,False,True,True,CORRECT,True,0,1040.00,False,altlayout,0
+1,TC12,TC12__noisy,PO_MISSING_ON_INVOICE;SUSPICIOUS_TEXT,False,high,False,True,,Needs review,False,F08,po_missed,Needs review,22,True,True,True,False,True,True,CORRECT,True,0,1040.00,False,noisy,0
+2,TC12,TC12__eu,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F08,po_missed,Needs review,14,False,False,False,False,False,False,CORRECT,True,0,,False,eu,0
+2,TC01,TC01,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F09,currency_flipped,Needs review,12,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+2,TC02,TC02,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F09,currency_flipped,Needs review,10,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+2,TC03,TC03,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F09,currency_flipped,Needs review,11,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC04,TC04,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F09,currency_flipped,Needs review,12,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC05,TC05,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F09,currency_flipped,Needs review,10,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,base,0
+2,TC06,TC06,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F09,currency_flipped,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC07,TC07,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F09,currency_flipped,Needs review,10,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC08,TC08,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F09,currency_flipped,Needs review,10,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,base,0
+2,TC09,TC09,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F09,currency_flipped,Needs review,15,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+2,TC10,TC10,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F09,currency_flipped,Needs review,13,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC11,TC11,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F09,currency_flipped,Needs review,10,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC12,TC12,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F09,currency_flipped,Needs review,13,False,False,False,False,False,False,CORRECT,True,0,,False,base,0
+2,TC01,TC01__altlayout,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F09,currency_flipped,Needs review,11,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+2,TC01,TC01__noisy,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F09,currency_flipped,Needs review,25,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+2,TC01,TC01__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F09,currency_flipped,Needs review,11,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+2,TC02,TC02__altlayout,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F09,currency_flipped,Needs review,11,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+2,TC02,TC02__noisy,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F09,currency_flipped,Needs review,18,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+2,TC02,TC02__eu,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F09,currency_flipped,Needs review,9,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+2,TC03,TC03__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F09,currency_flipped,Needs review,14,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC03,TC03__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F09,currency_flipped,Needs review,22,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC03,TC03__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F09,currency_flipped,Needs review,14,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC04,TC04__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F09,currency_flipped,Needs review,10,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC04,TC04__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F09,currency_flipped,Needs review,18,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC04,TC04__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F09,currency_flipped,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC05,TC05__altlayout,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F09,currency_flipped,Needs review,7,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,altlayout,0
+2,TC05,TC05__noisy,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F09,currency_flipped,Needs review,14,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,noisy,0
+2,TC05,TC05__eu,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F09,currency_flipped,Needs review,7,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,eu,0
+2,TC06,TC06__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F09,currency_flipped,Needs review,9,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC06,TC06__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F09,currency_flipped,Needs review,11,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC06,TC06__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F09,currency_flipped,Needs review,6,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC07,TC07__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F09,currency_flipped,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC07,TC07__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F09,currency_flipped,Needs review,14,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC07,TC07__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F09,currency_flipped,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC08,TC08__altlayout,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F09,currency_flipped,Needs review,8,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,altlayout,0
+2,TC08,TC08__noisy,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F09,currency_flipped,Needs review,15,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,noisy,0
+2,TC08,TC08__eu,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F09,currency_flipped,Needs review,7,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,eu,0
+2,TC09,TC09__altlayout,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F09,currency_flipped,Needs review,7,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+2,TC09,TC09__noisy,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F09,currency_flipped,Needs review,16,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+2,TC09,TC09__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F09,currency_flipped,Needs review,32,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+2,TC10,TC10__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F09,currency_flipped,Needs review,16,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC10,TC10__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F09,currency_flipped,Needs review,16,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC10,TC10__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F09,currency_flipped,Needs review,10,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC11,TC11__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F09,currency_flipped,Needs review,6,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC11,TC11__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F09,currency_flipped,Needs review,14,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC11,TC11__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F09,currency_flipped,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC12,TC12__altlayout,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F09,currency_flipped,Needs review,13,False,False,False,False,False,False,CORRECT,True,0,,False,altlayout,0
+2,TC12,TC12__noisy,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F09,currency_flipped,Needs review,16,False,False,False,False,False,False,CORRECT,True,0,,False,noisy,0
+2,TC12,TC12__eu,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F09,currency_flipped,Needs review,10,False,False,False,False,False,False,CORRECT,True,0,,False,eu,0
+1,TC01,TC01__noisy,,True,high,False,False,,Approve,False,F10,date_is_due_date,Approve,17,True,False,True,True,True,True,WRONG_DATA_APPROVED,False,0,6900.00,False,noisy,0
+1,TC02,TC02__noisy,WITHIN_TOLERANCE_VARIANCE,True,high,False,False,,Approve,False,F10,date_is_due_date,Approve,14,True,False,True,True,True,True,WRONG_DATA_APPROVED,False,0,4512.00,False,noisy,0
+1,TC03,TC03__noisy,AMOUNT_OVER_TOLERANCE;UNIT_PRICE_MISMATCH,True,high,False,True,,Needs review,False,F10,date_is_due_date,Needs review,18,True,False,True,True,True,True,CORRECT,False,0,47500.00,False,noisy,0
+1,TC04,TC04__noisy,AMOUNT_OVER_TOLERANCE;QUANTITY_EXCEEDS_PO,True,high,False,True,,Needs review,False,F10,date_is_due_date,Needs review,22,True,False,True,True,True,True,CORRECT,False,0,1920.00,False,noisy,0
+1,TC05,TC05__noisy,EXACT_DUPLICATE,True,high,False,True,,Reject (hold),False,F10,date_is_due_date,Reject (hold),15,True,False,True,True,True,True,CORRECT,False,0,1900.00,False,noisy,0
+1,TC06,TC06__noisy,,False,high,False,False,,Needs review,False,F10,date_is_due_date,Approve,12,True,False,True,True,True,True,CRITICAL_MISS,False,0,800.00,False,noisy,0
+1,TC07,TC07__noisy,PO_MISSING_ON_INVOICE,True,high,False,True,,Needs review,False,F10,date_is_due_date,Needs review,16,True,False,True,True,True,True,CORRECT,False,0,1300.00,False,noisy,0
+1,TC08,TC08__noisy,PO_NOT_FOUND,True,high,False,True,,Reject (hold),False,F10,date_is_due_date,Reject (hold),13,True,False,True,True,True,True,CORRECT,False,0,950.00,False,noisy,0
+1,TC09,TC09__noisy,,True,high,False,False,,Approve,False,F10,date_is_due_date,Approve,15,True,False,True,True,True,True,WRONG_DATA_APPROVED,False,0,1450.00,False,noisy,0
+1,TC10,TC10__noisy,FIELD_NOT_FOUND,True,high,False,False,,Needs review,False,F10,date_is_due_date,Needs review,17,True,False,True,True,True,True,CORRECT,False,0,,False,noisy,0
+1,TC11,TC11__noisy,CURRENCY_MISMATCH,True,high,False,True,,Needs review,False,F10,date_is_due_date,Needs review,13,True,False,True,True,True,True,CORRECT,False,0,1000.00,False,noisy,0
+1,TC12,TC12__noisy,AMOUNT_OVER_TOLERANCE;SUSPICIOUS_TEXT;UNIT_PRICE_MISMATCH,True,high,False,True,,Needs review,False,F10,date_is_due_date,Needs review,16,True,False,True,True,True,True,CORRECT,True,0,1040.00,False,noisy,0
+2,TC01,TC01,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F11,fenced_json,Needs review,20,False,False,False,False,False,False,FALSE_ALARM,False,0,,False,base,0
+2,TC02,TC02,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F11,fenced_json,Needs review,10,False,False,False,False,False,False,FALSE_ALARM,False,0,,False,base,0
+2,TC03,TC03,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F11,fenced_json,Needs review,13,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC04,TC04,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F11,fenced_json,Needs review,11,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC05,TC05,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F11,fenced_json,Needs review,15,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,base,0
+2,TC06,TC06,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F11,fenced_json,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC07,TC07,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F11,fenced_json,Needs review,10,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC08,TC08,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F11,fenced_json,Needs review,14,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,base,0
+2,TC09,TC09,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F11,fenced_json,Needs review,11,False,False,False,False,False,False,FALSE_ALARM,False,0,,False,base,0
+2,TC10,TC10,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F11,fenced_json,Needs review,10,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC11,TC11,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F11,fenced_json,Needs review,9,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC12,TC12,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F11,fenced_json,Needs review,12,False,False,False,False,False,False,CORRECT,True,0,,False,base,0
+2,TC01,TC01__altlayout,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F11,fenced_json,Needs review,8,False,False,False,False,False,False,FALSE_ALARM,False,0,,False,altlayout,0
+2,TC01,TC01__noisy,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F11,fenced_json,Needs review,22,False,False,False,False,False,False,FALSE_ALARM,False,0,,False,noisy,0
+2,TC01,TC01__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F11,fenced_json,Needs review,11,False,False,False,False,False,False,FALSE_ALARM,False,0,,False,eu,0
+2,TC02,TC02__altlayout,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F11,fenced_json,Needs review,12,False,False,False,False,False,False,FALSE_ALARM,False,0,,False,altlayout,0
+2,TC02,TC02__noisy,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F11,fenced_json,Needs review,23,False,False,False,False,False,False,FALSE_ALARM,False,0,,False,noisy,0
+2,TC02,TC02__eu,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F11,fenced_json,Needs review,8,False,False,False,False,False,False,FALSE_ALARM,False,0,,False,eu,0
+2,TC03,TC03__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F11,fenced_json,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC03,TC03__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F11,fenced_json,Needs review,15,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC03,TC03__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F11,fenced_json,Needs review,10,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC04,TC04__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F11,fenced_json,Needs review,41,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC04,TC04__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F11,fenced_json,Needs review,16,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC04,TC04__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F11,fenced_json,Needs review,10,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC05,TC05__altlayout,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F11,fenced_json,Needs review,9,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,altlayout,0
+2,TC05,TC05__noisy,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F11,fenced_json,Needs review,19,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,noisy,0
+2,TC05,TC05__eu,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F11,fenced_json,Needs review,11,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,eu,0
+2,TC06,TC06__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F11,fenced_json,Needs review,10,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC06,TC06__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F11,fenced_json,Needs review,21,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC06,TC06__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F11,fenced_json,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC07,TC07__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F11,fenced_json,Needs review,15,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC07,TC07__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F11,fenced_json,Needs review,20,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC07,TC07__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F11,fenced_json,Needs review,12,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC08,TC08__altlayout,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F11,fenced_json,Needs review,10,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,altlayout,0
+2,TC08,TC08__noisy,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F11,fenced_json,Needs review,20,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,noisy,0
+2,TC08,TC08__eu,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F11,fenced_json,Needs review,10,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,eu,0
+2,TC09,TC09__altlayout,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F11,fenced_json,Needs review,10,False,False,False,False,False,False,FALSE_ALARM,False,0,,False,altlayout,0
+2,TC09,TC09__noisy,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F11,fenced_json,Needs review,25,False,False,False,False,False,False,FALSE_ALARM,False,0,,False,noisy,0
+2,TC09,TC09__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F11,fenced_json,Needs review,12,False,False,False,False,False,False,FALSE_ALARM,False,0,,False,eu,0
+2,TC10,TC10__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F11,fenced_json,Needs review,11,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC10,TC10__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F11,fenced_json,Needs review,16,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC10,TC10__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F11,fenced_json,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC11,TC11__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F11,fenced_json,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC11,TC11__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F11,fenced_json,Needs review,13,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC11,TC11__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F11,fenced_json,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC12,TC12__altlayout,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F11,fenced_json,Needs review,11,False,False,False,False,False,False,CORRECT,True,0,,False,altlayout,0
+2,TC12,TC12__noisy,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F11,fenced_json,Needs review,17,False,False,False,False,False,False,CORRECT,True,0,,False,noisy,0
+2,TC12,TC12__eu,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F11,fenced_json,Needs review,9,False,False,False,False,False,False,CORRECT,True,0,,False,eu,0
+2,TC01,TC01,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F12,numbers_as_strings,Needs review,9,False,False,False,False,False,False,FALSE_ALARM,False,0,,False,base,0
+2,TC02,TC02,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F12,numbers_as_strings,Needs review,7,False,False,False,False,False,False,FALSE_ALARM,False,0,,False,base,0
+2,TC03,TC03,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F12,numbers_as_strings,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC04,TC04,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F12,numbers_as_strings,Needs review,6,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC05,TC05,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F12,numbers_as_strings,Needs review,9,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,base,0
+1,TC06,TC06,POSSIBLE_DUPLICATE,True,high,True,True,,Needs review,False,F12,numbers_as_strings,Needs review,8,True,True,True,True,True,True,CORRECT,False,0,800.00,False,base,0
+2,TC07,TC07,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F12,numbers_as_strings,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+1,TC08,TC08,PO_NOT_FOUND,True,high,True,True,,Reject (hold),False,F12,numbers_as_strings,Reject (hold),7,True,True,True,True,True,True,CORRECT,False,0,950.00,False,base,0
+2,TC09,TC09,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F12,numbers_as_strings,Needs review,8,False,False,False,False,False,False,FALSE_ALARM,False,0,,False,base,0
+2,TC11,TC11,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F12,numbers_as_strings,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC12,TC12,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F12,numbers_as_strings,Needs review,12,False,False,False,False,False,False,CORRECT,True,0,,False,base,0
+2,TC01,TC01__altlayout,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F12,numbers_as_strings,Needs review,11,False,False,False,False,False,False,FALSE_ALARM,False,0,,False,altlayout,0
+2,TC01,TC01__noisy,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F12,numbers_as_strings,Needs review,23,False,False,False,False,False,False,FALSE_ALARM,False,0,,False,noisy,0
+2,TC01,TC01__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F12,numbers_as_strings,Needs review,12,False,False,False,False,False,False,FALSE_ALARM,False,0,,False,eu,0
+2,TC02,TC02__altlayout,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F12,numbers_as_strings,Needs review,10,False,False,False,False,False,False,FALSE_ALARM,False,0,,False,altlayout,0
+2,TC02,TC02__noisy,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F12,numbers_as_strings,Needs review,20,False,False,False,False,False,False,FALSE_ALARM,False,0,,False,noisy,0
+2,TC02,TC02__eu,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F12,numbers_as_strings,Needs review,6,False,False,False,False,False,False,FALSE_ALARM,False,0,,False,eu,0
+2,TC03,TC03__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F12,numbers_as_strings,Needs review,9,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC03,TC03__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F12,numbers_as_strings,Needs review,19,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC03,TC03__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F12,numbers_as_strings,Needs review,15,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC04,TC04__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F12,numbers_as_strings,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC04,TC04__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F12,numbers_as_strings,Needs review,18,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC04,TC04__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F12,numbers_as_strings,Needs review,10,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC05,TC05__altlayout,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F12,numbers_as_strings,Needs review,8,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,altlayout,0
+2,TC05,TC05__noisy,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F12,numbers_as_strings,Needs review,44,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,noisy,0
+2,TC05,TC05__eu,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F12,numbers_as_strings,Needs review,9,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,eu,0
+1,TC06,TC06__altlayout,POSSIBLE_DUPLICATE,True,high,True,True,,Needs review,False,F12,numbers_as_strings,Needs review,9,True,True,True,True,True,True,CORRECT,False,0,800.00,False,altlayout,0
+1,TC06,TC06__noisy,POSSIBLE_DUPLICATE,True,high,True,True,,Needs review,False,F12,numbers_as_strings,Needs review,13,True,True,True,True,True,True,CORRECT,False,0,800.00,False,noisy,0
+1,TC06,TC06__eu,LOW_CONFIDENCE_EXTRACTION;POSSIBLE_DUPLICATE,True,low,True,True,,Needs review,False,F12,numbers_as_strings,Needs review,6,True,True,True,True,True,True,CORRECT,False,0,800.00,False,eu,0
+2,TC07,TC07__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F12,numbers_as_strings,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC07,TC07__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F12,numbers_as_strings,Needs review,16,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC07,TC07__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F12,numbers_as_strings,Needs review,10,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+1,TC08,TC08__altlayout,PO_NOT_FOUND,True,high,True,True,,Reject (hold),False,F12,numbers_as_strings,Reject (hold),9,True,True,True,True,True,True,CORRECT,False,0,950.00,False,altlayout,0
+1,TC08,TC08__noisy,PO_NOT_FOUND,True,high,True,True,,Reject (hold),False,F12,numbers_as_strings,Reject (hold),21,True,True,True,True,True,True,CORRECT,False,0,950.00,False,noisy,0
+1,TC08,TC08__eu,LOW_CONFIDENCE_EXTRACTION;PO_NOT_FOUND,True,low,True,True,,Reject (hold),False,F12,numbers_as_strings,Reject (hold),9,True,True,True,True,True,True,CORRECT,False,0,950.00,False,eu,0
+2,TC09,TC09__altlayout,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F12,numbers_as_strings,Needs review,10,False,False,False,False,False,False,FALSE_ALARM,False,0,,False,altlayout,0
+2,TC09,TC09__noisy,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F12,numbers_as_strings,Needs review,22,False,False,False,False,False,False,FALSE_ALARM,False,0,,False,noisy,0
+2,TC09,TC09__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F12,numbers_as_strings,Needs review,18,False,False,False,False,False,False,FALSE_ALARM,False,0,,False,eu,0
+2,TC11,TC11__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F12,numbers_as_strings,Needs review,9,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC11,TC11__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F12,numbers_as_strings,Needs review,21,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC11,TC11__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F12,numbers_as_strings,Needs review,10,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC12,TC12__altlayout,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F12,numbers_as_strings,Needs review,14,False,False,False,False,False,False,CORRECT,True,0,,False,altlayout,0
+2,TC12,TC12__noisy,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F12,numbers_as_strings,Needs review,30,False,False,False,False,False,False,CORRECT,True,0,,False,noisy,0
+2,TC12,TC12__eu,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F12,numbers_as_strings,Needs review,14,False,False,False,False,False,False,CORRECT,True,0,,False,eu,0
+2,TC01,TC01,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F13,extra_decision_field,Needs review,12,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+2,TC02,TC02,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F13,extra_decision_field,Needs review,10,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+2,TC03,TC03,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F13,extra_decision_field,Needs review,16,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC04,TC04,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F13,extra_decision_field,Needs review,11,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC05,TC05,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F13,extra_decision_field,Needs review,11,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,base,0
+2,TC06,TC06,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F13,extra_decision_field,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC07,TC07,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F13,extra_decision_field,Needs review,12,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC08,TC08,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F13,extra_decision_field,Needs review,10,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,base,0
+2,TC09,TC09,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F13,extra_decision_field,Needs review,12,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+2,TC10,TC10,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F13,extra_decision_field,Needs review,17,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC11,TC11,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F13,extra_decision_field,Needs review,10,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC12,TC12,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F13,extra_decision_field,Needs review,12,False,False,False,False,False,False,CORRECT,True,0,,False,base,0
+2,TC01,TC01__altlayout,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F13,extra_decision_field,Needs review,11,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+2,TC01,TC01__noisy,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F13,extra_decision_field,Needs review,25,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+2,TC01,TC01__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F13,extra_decision_field,Needs review,13,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+2,TC02,TC02__altlayout,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F13,extra_decision_field,Needs review,9,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+2,TC02,TC02__noisy,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F13,extra_decision_field,Needs review,14,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+2,TC02,TC02__eu,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F13,extra_decision_field,Needs review,7,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+2,TC03,TC03__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F13,extra_decision_field,Needs review,10,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC03,TC03__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F13,extra_decision_field,Needs review,15,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC03,TC03__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F13,extra_decision_field,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC04,TC04__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F13,extra_decision_field,Needs review,6,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC04,TC04__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F13,extra_decision_field,Needs review,17,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC04,TC04__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F13,extra_decision_field,Needs review,9,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC05,TC05__altlayout,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F13,extra_decision_field,Needs review,11,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,altlayout,0
+2,TC05,TC05__noisy,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F13,extra_decision_field,Needs review,18,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,noisy,0
+2,TC05,TC05__eu,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F13,extra_decision_field,Needs review,8,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,eu,0
+2,TC06,TC06__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F13,extra_decision_field,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC06,TC06__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F13,extra_decision_field,Needs review,17,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC06,TC06__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F13,extra_decision_field,Needs review,6,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC07,TC07__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F13,extra_decision_field,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC07,TC07__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F13,extra_decision_field,Needs review,16,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC07,TC07__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F13,extra_decision_field,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC08,TC08__altlayout,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F13,extra_decision_field,Needs review,6,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,altlayout,0
+2,TC08,TC08__noisy,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F13,extra_decision_field,Needs review,48,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,noisy,0
+2,TC08,TC08__eu,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F13,extra_decision_field,Needs review,8,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,eu,0
+2,TC09,TC09__altlayout,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F13,extra_decision_field,Needs review,8,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+2,TC09,TC09__noisy,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F13,extra_decision_field,Needs review,18,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+2,TC09,TC09__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F13,extra_decision_field,Needs review,9,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+2,TC10,TC10__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F13,extra_decision_field,Needs review,9,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC10,TC10__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F13,extra_decision_field,Needs review,18,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC10,TC10__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F13,extra_decision_field,Needs review,9,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC11,TC11__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F13,extra_decision_field,Needs review,6,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC11,TC11__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F13,extra_decision_field,Needs review,17,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC11,TC11__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F13,extra_decision_field,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC12,TC12__altlayout,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F13,extra_decision_field,Needs review,12,False,False,False,False,False,False,CORRECT,True,0,,False,altlayout,0
+2,TC12,TC12__noisy,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F13,extra_decision_field,Needs review,20,False,False,False,False,False,False,CORRECT,True,0,,False,noisy,0
+2,TC12,TC12__eu,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F13,extra_decision_field,Needs review,11,False,False,False,False,False,False,CORRECT,True,0,,False,eu,0
+2,TC01,TC01,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F14,empty_output,Needs review,9,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+2,TC02,TC02,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F14,empty_output,Needs review,10,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+2,TC03,TC03,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F14,empty_output,Needs review,9,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC04,TC04,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F14,empty_output,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC05,TC05,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F14,empty_output,Needs review,8,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,base,0
+2,TC06,TC06,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F14,empty_output,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC07,TC07,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F14,empty_output,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC08,TC08,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F14,empty_output,Needs review,7,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,base,0
+2,TC09,TC09,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F14,empty_output,Needs review,12,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+2,TC10,TC10,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F14,empty_output,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC11,TC11,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F14,empty_output,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC12,TC12,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F14,empty_output,Needs review,11,False,False,False,False,False,False,CORRECT,True,0,,False,base,0
+2,TC01,TC01__altlayout,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F14,empty_output,Needs review,9,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+2,TC01,TC01__noisy,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F14,empty_output,Needs review,21,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+2,TC01,TC01__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F14,empty_output,Needs review,12,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+2,TC02,TC02__altlayout,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F14,empty_output,Needs review,9,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+2,TC02,TC02__noisy,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F14,empty_output,Needs review,15,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+2,TC02,TC02__eu,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F14,empty_output,Needs review,7,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+2,TC03,TC03__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F14,empty_output,Needs review,12,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC03,TC03__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F14,empty_output,Needs review,16,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC03,TC03__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F14,empty_output,Needs review,9,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC04,TC04__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F14,empty_output,Needs review,9,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC04,TC04__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F14,empty_output,Needs review,20,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC04,TC04__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F14,empty_output,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC05,TC05__altlayout,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F14,empty_output,Needs review,8,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,altlayout,0
+2,TC05,TC05__noisy,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F14,empty_output,Needs review,16,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,noisy,0
+2,TC05,TC05__eu,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F14,empty_output,Needs review,8,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,eu,0
+2,TC06,TC06__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F14,empty_output,Needs review,13,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC06,TC06__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F14,empty_output,Needs review,13,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC06,TC06__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F14,empty_output,Needs review,6,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC07,TC07__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F14,empty_output,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC07,TC07__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F14,empty_output,Needs review,14,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC07,TC07__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F14,empty_output,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC08,TC08__altlayout,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F14,empty_output,Needs review,9,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,altlayout,0
+2,TC08,TC08__noisy,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F14,empty_output,Needs review,13,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,noisy,0
+2,TC08,TC08__eu,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F14,empty_output,Needs review,7,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,eu,0
+2,TC09,TC09__altlayout,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F14,empty_output,Needs review,8,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+2,TC09,TC09__noisy,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F14,empty_output,Needs review,15,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+2,TC09,TC09__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F14,empty_output,Needs review,10,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+2,TC10,TC10__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F14,empty_output,Needs review,30,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC10,TC10__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F14,empty_output,Needs review,15,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC10,TC10__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F14,empty_output,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC11,TC11__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F14,empty_output,Needs review,6,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC11,TC11__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F14,empty_output,Needs review,13,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC11,TC11__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F14,empty_output,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC12,TC12__altlayout,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F14,empty_output,Needs review,10,False,False,False,False,False,False,CORRECT,True,0,,False,altlayout,0
+2,TC12,TC12__noisy,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F14,empty_output,Needs review,12,False,False,False,False,False,False,CORRECT,True,0,,False,noisy,0
+2,TC12,TC12__eu,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F14,empty_output,Needs review,7,False,False,False,False,False,False,CORRECT,True,0,,False,eu,0
+2,TC01,TC01,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F15,truncated_json,Needs review,6,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+2,TC02,TC02,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F15,truncated_json,Needs review,5,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+2,TC03,TC03,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F15,truncated_json,Needs review,9,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC04,TC04,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F15,truncated_json,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC05,TC05,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F15,truncated_json,Needs review,6,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,base,0
+2,TC06,TC06,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F15,truncated_json,Needs review,4,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC07,TC07,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F15,truncated_json,Needs review,5,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC08,TC08,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F15,truncated_json,Needs review,5,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,base,0
+2,TC09,TC09,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F15,truncated_json,Needs review,7,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+2,TC10,TC10,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F15,truncated_json,Needs review,9,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC11,TC11,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F15,truncated_json,Needs review,6,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+2,TC12,TC12,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F15,truncated_json,Needs review,7,False,False,False,False,False,False,CORRECT,True,0,,False,base,0
+2,TC01,TC01__altlayout,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F15,truncated_json,Needs review,6,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+2,TC01,TC01__noisy,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F15,truncated_json,Needs review,12,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+2,TC01,TC01__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F15,truncated_json,Needs review,9,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+2,TC02,TC02__altlayout,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F15,truncated_json,Needs review,6,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+2,TC02,TC02__noisy,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F15,truncated_json,Needs review,10,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+2,TC02,TC02__eu,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F15,truncated_json,Needs review,5,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+2,TC03,TC03__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F15,truncated_json,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC03,TC03__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F15,truncated_json,Needs review,13,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC03,TC03__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F15,truncated_json,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC04,TC04__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F15,truncated_json,Needs review,5,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC04,TC04__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F15,truncated_json,Needs review,11,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC04,TC04__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F15,truncated_json,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC05,TC05__altlayout,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F15,truncated_json,Needs review,5,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,altlayout,0
+2,TC05,TC05__noisy,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F15,truncated_json,Needs review,12,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,noisy,0
+2,TC05,TC05__eu,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F15,truncated_json,Needs review,6,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,eu,0
+2,TC06,TC06__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F15,truncated_json,Needs review,5,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC06,TC06__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F15,truncated_json,Needs review,11,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC06,TC06__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F15,truncated_json,Needs review,6,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC07,TC07__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F15,truncated_json,Needs review,5,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC07,TC07__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F15,truncated_json,Needs review,20,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC07,TC07__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F15,truncated_json,Needs review,10,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC08,TC08__altlayout,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F15,truncated_json,Needs review,7,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,altlayout,0
+2,TC08,TC08__noisy,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F15,truncated_json,Needs review,21,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,noisy,0
+2,TC08,TC08__eu,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F15,truncated_json,Needs review,9,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,eu,0
+2,TC09,TC09__altlayout,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F15,truncated_json,Needs review,9,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+2,TC09,TC09__noisy,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F15,truncated_json,Needs review,21,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+2,TC09,TC09__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F15,truncated_json,Needs review,11,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+2,TC10,TC10__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F15,truncated_json,Needs review,14,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC10,TC10__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F15,truncated_json,Needs review,20,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC10,TC10__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F15,truncated_json,Needs review,12,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC11,TC11__altlayout,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F15,truncated_json,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+2,TC11,TC11__noisy,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F15,truncated_json,Needs review,15,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+2,TC11,TC11__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F15,truncated_json,Needs review,30,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+2,TC12,TC12__altlayout,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F15,truncated_json,Needs review,9,False,False,False,False,False,False,CORRECT,True,0,,False,altlayout,0
+2,TC12,TC12__noisy,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F15,truncated_json,Needs review,16,False,False,False,False,False,False,CORRECT,True,0,,False,noisy,0
+2,TC12,TC12__eu,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F15,truncated_json,Needs review,10,False,False,False,False,False,False,CORRECT,True,0,,False,eu,0
+1,TC01,TC01,EXTRACTION_UNAVAILABLE,True,none,False,False,LLM_UNAVAILABLE,Approve,True,F16,llm_unavailable,Needs review,8,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+1,TC02,TC02,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Approve,True,F16,llm_unavailable,Needs review,6,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+1,TC03,TC03,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Needs review,True,F16,llm_unavailable,Needs review,9,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+1,TC04,TC04,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Needs review,True,F16,llm_unavailable,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+1,TC05,TC05,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Reject (hold),True,F16,llm_unavailable,Needs review,7,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,base,0
+1,TC06,TC06,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Needs review,True,F16,llm_unavailable,Needs review,5,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+1,TC07,TC07,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Needs review,True,F16,llm_unavailable,Needs review,6,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+1,TC08,TC08,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Reject (hold),True,F16,llm_unavailable,Needs review,6,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,base,0
+1,TC09,TC09,EXTRACTION_UNAVAILABLE,True,none,False,False,LLM_UNAVAILABLE,Approve,True,F16,llm_unavailable,Needs review,10,False,False,False,False,False,False,DETECTED,False,0,,False,base,0
+1,TC10,TC10,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Needs review,True,F16,llm_unavailable,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+1,TC11,TC11,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Needs review,True,F16,llm_unavailable,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,base,0
+1,TC12,TC12,EXTRACTION_UNAVAILABLE;SUSPICIOUS_TEXT,False,none,False,False,LLM_UNAVAILABLE,Needs review,True,F16,llm_unavailable,Needs review,9,False,False,False,False,False,False,CORRECT,True,0,,False,base,0
+1,TC01,TC01__altlayout,EXTRACTION_UNAVAILABLE,True,none,False,False,LLM_UNAVAILABLE,Approve,True,F16,llm_unavailable,Needs review,7,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+1,TC01,TC01__noisy,EXTRACTION_UNAVAILABLE,True,none,False,False,LLM_UNAVAILABLE,Approve,True,F16,llm_unavailable,Needs review,16,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+1,TC01,TC01__eu,EXTRACTION_UNAVAILABLE,True,none,False,False,LLM_UNAVAILABLE,Approve,True,F16,llm_unavailable,Needs review,8,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+1,TC02,TC02__altlayout,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Approve,True,F16,llm_unavailable,Needs review,7,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+1,TC02,TC02__noisy,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Approve,True,F16,llm_unavailable,Needs review,12,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+1,TC02,TC02__eu,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Approve,True,F16,llm_unavailable,Needs review,6,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+1,TC03,TC03__altlayout,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Needs review,True,F16,llm_unavailable,Needs review,10,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+1,TC03,TC03__noisy,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Needs review,True,F16,llm_unavailable,Needs review,14,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+1,TC03,TC03__eu,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Needs review,True,F16,llm_unavailable,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+1,TC04,TC04__altlayout,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Needs review,True,F16,llm_unavailable,Needs review,6,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+1,TC04,TC04__noisy,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Needs review,True,F16,llm_unavailable,Needs review,17,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+1,TC04,TC04__eu,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Needs review,True,F16,llm_unavailable,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+1,TC05,TC05__altlayout,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Reject (hold),True,F16,llm_unavailable,Needs review,7,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,altlayout,0
+1,TC05,TC05__noisy,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Reject (hold),True,F16,llm_unavailable,Needs review,15,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,noisy,0
+1,TC05,TC05__eu,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Reject (hold),True,F16,llm_unavailable,Needs review,7,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,eu,0
+1,TC06,TC06__altlayout,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Needs review,True,F16,llm_unavailable,Needs review,11,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+1,TC06,TC06__noisy,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Needs review,True,F16,llm_unavailable,Needs review,12,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+1,TC06,TC06__eu,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Needs review,True,F16,llm_unavailable,Needs review,5,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+1,TC07,TC07__altlayout,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Needs review,True,F16,llm_unavailable,Needs review,6,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+1,TC07,TC07__noisy,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Needs review,True,F16,llm_unavailable,Needs review,13,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+1,TC07,TC07__eu,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Needs review,True,F16,llm_unavailable,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+1,TC08,TC08__altlayout,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Reject (hold),True,F16,llm_unavailable,Needs review,8,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,altlayout,0
+1,TC08,TC08__noisy,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Reject (hold),True,F16,llm_unavailable,Needs review,13,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,noisy,0
+1,TC08,TC08__eu,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Reject (hold),True,F16,llm_unavailable,Needs review,6,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,eu,0
+1,TC09,TC09__altlayout,EXTRACTION_UNAVAILABLE,True,none,False,False,LLM_UNAVAILABLE,Approve,True,F16,llm_unavailable,Needs review,6,False,False,False,False,False,False,DETECTED,False,0,,False,altlayout,0
+1,TC09,TC09__noisy,EXTRACTION_UNAVAILABLE,True,none,False,False,LLM_UNAVAILABLE,Approve,True,F16,llm_unavailable,Needs review,16,False,False,False,False,False,False,DETECTED,False,0,,False,noisy,0
+1,TC09,TC09__eu,EXTRACTION_UNAVAILABLE,True,none,False,False,LLM_UNAVAILABLE,Approve,True,F16,llm_unavailable,Needs review,7,False,False,False,False,False,False,DETECTED,False,0,,False,eu,0
+1,TC10,TC10__altlayout,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Needs review,True,F16,llm_unavailable,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+1,TC10,TC10__noisy,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Needs review,True,F16,llm_unavailable,Needs review,14,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+1,TC10,TC10__eu,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Needs review,True,F16,llm_unavailable,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+1,TC11,TC11__altlayout,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Needs review,True,F16,llm_unavailable,Needs review,5,False,False,False,False,False,False,CORRECT,False,0,,False,altlayout,0
+1,TC11,TC11__noisy,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Needs review,True,F16,llm_unavailable,Needs review,13,False,False,False,False,False,False,CORRECT,False,0,,False,noisy,0
+1,TC11,TC11__eu,EXTRACTION_UNAVAILABLE,False,none,False,False,LLM_UNAVAILABLE,Needs review,True,F16,llm_unavailable,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+1,TC12,TC12__altlayout,EXTRACTION_UNAVAILABLE;SUSPICIOUS_TEXT,False,none,False,False,LLM_UNAVAILABLE,Needs review,True,F16,llm_unavailable,Needs review,9,False,False,False,False,False,False,CORRECT,True,0,,False,altlayout,0
+1,TC12,TC12__noisy,EXTRACTION_UNAVAILABLE;SUSPICIOUS_TEXT,False,none,False,False,LLM_UNAVAILABLE,Needs review,True,F16,llm_unavailable,Needs review,17,False,False,False,False,False,False,CORRECT,True,0,,False,noisy,0
+1,TC12,TC12__eu,EXTRACTION_UNAVAILABLE;SUSPICIOUS_TEXT,False,none,False,False,LLM_UNAVAILABLE,Needs review,True,F16,llm_unavailable,Needs review,40,False,False,False,False,False,False,CORRECT,True,0,,False,eu,0
+1,TC01,TC01,LINE_NOT_ON_PO,True,high,True,True,,Approve,False,F17,description_paraphrased,Needs review,9,True,True,True,True,True,True,FALSE_ALARM,False,0,6900.00,False,base,0
+1,TC02,TC02,LINE_NOT_ON_PO;WITHIN_TOLERANCE_VARIANCE,True,high,True,True,,Approve,False,F17,description_paraphrased,Needs review,8,True,True,True,True,True,True,FALSE_ALARM,False,0,4512.00,False,base,0
+1,TC03,TC03,AMOUNT_OVER_TOLERANCE;LINE_NOT_ON_PO,False,high,True,True,,Needs review,False,F17,description_paraphrased,Needs review,10,True,True,True,True,True,True,CORRECT,False,0,47500.00,False,base,0
+1,TC04,TC04,AMOUNT_OVER_TOLERANCE;LINE_NOT_ON_PO,False,high,True,True,,Needs review,False,F17,description_paraphrased,Needs review,11,True,True,True,True,True,True,CORRECT,False,0,1920.00,False,base,0
+1,TC05,TC05,EXACT_DUPLICATE;LINE_NOT_ON_PO,True,high,True,True,,Reject (hold),False,F17,description_paraphrased,Reject (hold),8,True,True,True,True,True,True,CORRECT,False,0,1900.00,False,base,0
+1,TC06,TC06,LINE_NOT_ON_PO;POSSIBLE_DUPLICATE,True,high,True,True,,Needs review,False,F17,description_paraphrased,Needs review,7,True,True,True,True,True,True,CORRECT,False,0,800.00,False,base,0
+1,TC07,TC07,PO_MISSING_ON_INVOICE,True,high,True,True,,Needs review,False,F17,description_paraphrased,Needs review,7,True,True,True,True,True,True,CORRECT,False,0,1300.00,False,base,0
+1,TC08,TC08,PO_NOT_FOUND,True,high,True,True,,Reject (hold),False,F17,description_paraphrased,Reject (hold),7,True,True,True,True,True,True,CORRECT,False,0,950.00,False,base,0
+1,TC09,TC09,LINE_NOT_ON_PO,True,high,True,True,,Approve,False,F17,description_paraphrased,Needs review,12,True,True,True,True,True,True,FALSE_ALARM,False,0,1450.00,False,base,0
+1,TC10,TC10,FIELD_NOT_FOUND;LINE_NOT_ON_PO,True,high,True,True,,Needs review,False,F17,description_paraphrased,Needs review,10,True,True,True,True,True,True,CORRECT,False,0,,False,base,0
+1,TC11,TC11,CURRENCY_MISMATCH,True,high,True,True,,Needs review,False,F17,description_paraphrased,Needs review,8,True,True,True,True,True,True,CORRECT,False,0,1000.00,False,base,0
+1,TC12,TC12,AMOUNT_OVER_TOLERANCE;LINE_NOT_ON_PO;SUSPICIOUS_TEXT,False,high,True,True,,Needs review,False,F17,description_paraphrased,Needs review,10,True,True,True,True,True,True,CORRECT,True,0,1040.00,False,base,0
+1,TC01,TC01__altlayout,LINE_NOT_ON_PO,True,high,True,True,,Approve,False,F17,description_paraphrased,Needs review,7,True,True,True,True,True,True,FALSE_ALARM,False,0,6900.00,False,altlayout,0
+1,TC01,TC01__noisy,LINE_NOT_ON_PO,True,high,True,True,,Approve,False,F17,description_paraphrased,Needs review,17,True,True,True,True,True,True,FALSE_ALARM,False,0,6900.00,False,noisy,0
+2,TC01,TC01__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F17,description_paraphrased,Needs review,8,False,False,False,False,False,False,FALSE_ALARM,False,0,,False,eu,0
+1,TC02,TC02__altlayout,LINE_NOT_ON_PO;WITHIN_TOLERANCE_VARIANCE,True,high,True,True,,Approve,False,F17,description_paraphrased,Needs review,8,True,True,True,True,True,True,FALSE_ALARM,False,0,4512.00,False,altlayout,0
+1,TC02,TC02__noisy,LINE_NOT_ON_PO;WITHIN_TOLERANCE_VARIANCE,True,high,True,True,,Approve,False,F17,description_paraphrased,Needs review,13,True,True,True,True,True,True,FALSE_ALARM,False,0,4512.00,False,noisy,0
+2,TC02,TC02__eu,EXTRACTION_INVALID,False,none,False,False,,Approve,True,F17,description_paraphrased,Needs review,6,False,False,False,False,False,False,FALSE_ALARM,False,0,,False,eu,0
+1,TC03,TC03__altlayout,AMOUNT_OVER_TOLERANCE;LINE_NOT_ON_PO,False,high,True,True,,Needs review,False,F17,description_paraphrased,Needs review,11,True,True,True,True,True,True,CORRECT,False,0,47500.00,False,altlayout,0
+1,TC03,TC03__noisy,AMOUNT_OVER_TOLERANCE;LINE_NOT_ON_PO,False,high,True,True,,Needs review,False,F17,description_paraphrased,Needs review,14,True,True,True,True,True,True,CORRECT,False,0,47500.00,False,noisy,0
+2,TC03,TC03__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F17,description_paraphrased,Needs review,8,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+1,TC04,TC04__altlayout,AMOUNT_OVER_TOLERANCE;LINE_NOT_ON_PO,False,high,True,True,,Needs review,False,F17,description_paraphrased,Needs review,6,True,True,True,True,True,True,CORRECT,False,0,1920.00,False,altlayout,0
+1,TC04,TC04__noisy,AMOUNT_OVER_TOLERANCE;LINE_NOT_ON_PO,False,high,True,True,,Needs review,False,F17,description_paraphrased,Needs review,15,True,True,True,True,True,True,CORRECT,False,0,1920.00,False,noisy,0
+2,TC04,TC04__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F17,description_paraphrased,Needs review,7,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+1,TC05,TC05__altlayout,EXACT_DUPLICATE;LINE_NOT_ON_PO,True,high,True,True,,Reject (hold),False,F17,description_paraphrased,Reject (hold),7,True,True,True,True,True,True,CORRECT,False,0,1900.00,False,altlayout,0
+1,TC05,TC05__noisy,EXACT_DUPLICATE;LINE_NOT_ON_PO,True,high,True,True,,Reject (hold),False,F17,description_paraphrased,Reject (hold),12,True,True,True,True,True,True,CORRECT,False,0,1900.00,False,noisy,0
+2,TC05,TC05__eu,EXTRACTION_INVALID,False,none,False,False,,Reject (hold),True,F17,description_paraphrased,Needs review,7,False,False,False,False,False,False,UNDER_FLAG,False,0,,False,eu,0
+1,TC06,TC06__altlayout,LINE_NOT_ON_PO;POSSIBLE_DUPLICATE,True,high,True,True,,Needs review,False,F17,description_paraphrased,Needs review,9,True,True,True,True,True,True,CORRECT,False,0,800.00,False,altlayout,0
+1,TC06,TC06__noisy,LINE_NOT_ON_PO;POSSIBLE_DUPLICATE,True,high,True,True,,Needs review,False,F17,description_paraphrased,Needs review,10,True,True,True,True,True,True,CORRECT,False,0,800.00,False,noisy,0
+1,TC06,TC06__eu,LINE_NOT_ON_PO;LOW_CONFIDENCE_EXTRACTION;POSSIBLE_DUPLICATE,True,low,True,True,,Needs review,False,F17,description_paraphrased,Needs review,5,True,True,True,True,True,True,CORRECT,False,0,800.00,False,eu,0
+1,TC07,TC07__altlayout,PO_MISSING_ON_INVOICE,True,high,True,True,,Needs review,False,F17,description_paraphrased,Needs review,6,True,True,True,True,True,True,CORRECT,False,0,1300.00,False,altlayout,0
+1,TC07,TC07__noisy,PO_MISSING_ON_INVOICE,True,high,True,True,,Needs review,False,F17,description_paraphrased,Needs review,12,True,True,True,True,True,True,CORRECT,False,0,1300.00,False,noisy,0
+2,TC07,TC07__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F17,description_paraphrased,Needs review,10,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+1,TC08,TC08__altlayout,PO_NOT_FOUND,True,high,True,True,,Reject (hold),False,F17,description_paraphrased,Reject (hold),6,True,True,True,True,True,True,CORRECT,False,0,950.00,False,altlayout,0
+1,TC08,TC08__noisy,PO_NOT_FOUND,True,high,True,True,,Reject (hold),False,F17,description_paraphrased,Reject (hold),11,True,True,True,True,True,True,CORRECT,False,0,950.00,False,noisy,0
+1,TC08,TC08__eu,LOW_CONFIDENCE_EXTRACTION;PO_NOT_FOUND,True,low,True,True,,Reject (hold),False,F17,description_paraphrased,Reject (hold),6,True,True,True,True,True,True,CORRECT,False,0,950.00,False,eu,0
+1,TC09,TC09__altlayout,LINE_NOT_ON_PO,True,high,True,True,,Approve,False,F17,description_paraphrased,Needs review,6,True,True,True,True,True,True,FALSE_ALARM,False,0,1450.00,False,altlayout,0
+1,TC09,TC09__noisy,LINE_NOT_ON_PO,True,high,True,True,,Approve,False,F17,description_paraphrased,Needs review,15,True,True,True,True,True,True,FALSE_ALARM,False,0,1450.00,False,noisy,0
+2,TC09,TC09__eu,EXTRACTION_INVALID,True,none,False,False,,Approve,True,F17,description_paraphrased,Needs review,8,False,False,False,False,False,False,FALSE_ALARM,False,0,,False,eu,0
+1,TC10,TC10__altlayout,FIELD_NOT_FOUND;LINE_NOT_ON_PO,True,high,True,True,,Needs review,False,F17,description_paraphrased,Needs review,6,True,True,True,True,True,True,CORRECT,False,0,,False,altlayout,0
+1,TC10,TC10__noisy,FIELD_NOT_FOUND;LINE_NOT_ON_PO,True,high,True,True,,Needs review,False,F17,description_paraphrased,Needs review,12,True,True,True,True,True,True,CORRECT,False,0,,False,noisy,0
+1,TC10,TC10__eu,FIELD_NOT_FOUND;LINE_NOT_ON_PO;LOW_CONFIDENCE_EXTRACTION,True,low,True,True,,Needs review,False,F17,description_paraphrased,Needs review,7,True,True,True,True,True,True,CORRECT,False,0,,False,eu,0
+1,TC11,TC11__altlayout,CURRENCY_MISMATCH,True,high,True,True,,Needs review,False,F17,description_paraphrased,Needs review,8,True,True,True,True,True,True,CORRECT,False,0,1000.00,False,altlayout,0
+1,TC11,TC11__noisy,CURRENCY_MISMATCH,True,high,True,True,,Needs review,False,F17,description_paraphrased,Needs review,11,True,True,True,True,True,True,CORRECT,False,0,1000.00,False,noisy,0
+2,TC11,TC11__eu,EXTRACTION_INVALID,False,none,False,False,,Needs review,True,F17,description_paraphrased,Needs review,6,False,False,False,False,False,False,CORRECT,False,0,,False,eu,0
+1,TC12,TC12__altlayout,AMOUNT_OVER_TOLERANCE;LINE_NOT_ON_PO;SUSPICIOUS_TEXT,False,high,True,True,,Needs review,False,F17,description_paraphrased,Needs review,9,True,True,True,True,True,True,CORRECT,True,0,1040.00,False,altlayout,0
+1,TC12,TC12__noisy,AMOUNT_OVER_TOLERANCE;LINE_NOT_ON_PO;SUSPICIOUS_TEXT,False,high,True,True,,Needs review,False,F17,description_paraphrased,Needs review,16,True,True,True,True,True,True,CORRECT,True,0,1040.00,False,noisy,0
+2,TC12,TC12__eu,EXTRACTION_INVALID;SUSPICIOUS_TEXT,False,none,False,False,,Needs review,True,F17,description_paraphrased,Needs review,8,False,False,False,False,False,False,CORRECT,True,0,,False,eu,0
+1,TC01,TC01,FIELD_NOT_FOUND,True,high,False,False,,Approve,False,F18,total_missed,Needs review,7,True,True,True,True,False,True,DETECTED,False,0,,False,base,0
+1,TC02,TC02,FIELD_NOT_FOUND,False,high,False,False,,Approve,False,F18,total_missed,Needs review,6,True,True,True,True,False,True,DETECTED,False,0,,False,base,0
+1,TC03,TC03,FIELD_NOT_FOUND;UNIT_PRICE_MISMATCH,False,high,False,True,,Needs review,False,F18,total_missed,Needs review,11,True,True,True,True,False,True,CORRECT,False,0,,False,base,0
+1,TC04,TC04,FIELD_NOT_FOUND;QUANTITY_EXCEEDS_PO,False,high,False,True,,Needs review,False,F18,total_missed,Needs review,10,True,True,True,True,False,True,CORRECT,False,0,,False,base,0
+1,TC05,TC05,EXACT_DUPLICATE;FIELD_NOT_FOUND,True,high,False,True,,Reject (hold),False,F18,total_missed,Reject (hold),13,True,True,True,True,False,True,CORRECT,False,0,,False,base,0
+1,TC06,TC06,FIELD_NOT_FOUND,False,high,False,False,,Needs review,False,F18,total_missed,Needs review,48,True,True,True,True,False,True,CORRECT,False,0,,False,base,0
+1,TC07,TC07,FIELD_NOT_FOUND;PO_MISSING_ON_INVOICE,True,high,False,True,,Needs review,False,F18,total_missed,Needs review,9,True,True,True,True,False,True,CORRECT,False,0,,False,base,0
+1,TC08,TC08,FIELD_NOT_FOUND;PO_NOT_FOUND,True,high,False,True,,Reject (hold),False,F18,total_missed,Reject (hold),12,True,True,True,True,False,True,CORRECT,False,0,,False,base,0
+1,TC09,TC09,FIELD_NOT_FOUND,True,high,False,False,,Approve,False,F18,total_missed,Needs review,10,True,True,True,True,False,True,DETECTED,False,0,,False,base,0
+1,TC11,TC11,CURRENCY_MISMATCH;FIELD_NOT_FOUND,True,high,False,True,,Needs review,False,F18,total_missed,Needs review,10,True,True,True,True,False,True,CORRECT,False,0,,False,base,0
+1,TC12,TC12,FIELD_NOT_FOUND;SUSPICIOUS_TEXT;UNIT_PRICE_MISMATCH,False,high,False,True,,Needs review,False,F18,total_missed,Needs review,8,True,True,True,True,False,True,CORRECT,True,0,,False,base,0
+1,TC01,TC01__altlayout,FIELD_NOT_FOUND,True,high,False,False,,Approve,False,F18,total_missed,Needs review,7,True,True,True,True,False,True,DETECTED,False,0,,False,altlayout,0
+1,TC01,TC01__noisy,FIELD_NOT_FOUND,True,high,False,False,,Approve,False,F18,total_missed,Needs review,12,True,True,True,True,False,True,DETECTED,False,0,,False,noisy,0
+1,TC01,TC01__eu,FIELD_NOT_FOUND;LOW_CONFIDENCE_EXTRACTION,True,low,False,False,,Approve,False,F18,total_missed,Needs review,9,True,True,True,True,False,True,DETECTED,False,0,,False,eu,0
+1,TC02,TC02__altlayout,FIELD_NOT_FOUND,False,high,False,False,,Approve,False,F18,total_missed,Needs review,7,True,True,True,True,False,True,DETECTED,False,0,,False,altlayout,0
+1,TC02,TC02__noisy,FIELD_NOT_FOUND,False,high,False,False,,Approve,False,F18,total_missed,Needs review,11,True,True,True,True,False,True,DETECTED,False,0,,False,noisy,0
+1,TC02,TC02__eu,FIELD_NOT_FOUND;LOW_CONFIDENCE_EXTRACTION,False,low,False,False,,Approve,False,F18,total_missed,Needs review,8,True,True,True,True,False,True,DETECTED,False,0,,False,eu,0
+1,TC03,TC03__altlayout,FIELD_NOT_FOUND;UNIT_PRICE_MISMATCH,False,high,False,True,,Needs review,False,F18,total_missed,Needs review,8,True,True,True,True,False,True,CORRECT,False,0,,False,altlayout,0
+1,TC03,TC03__noisy,FIELD_NOT_FOUND;UNIT_PRICE_MISMATCH,False,high,False,True,,Needs review,False,F18,total_missed,Needs review,18,True,True,True,True,False,True,CORRECT,False,0,,False,noisy,0
+1,TC03,TC03__eu,FIELD_NOT_FOUND;LOW_CONFIDENCE_EXTRACTION;UNIT_PRICE_MISMATCH,False,low,False,True,,Needs review,False,F18,total_missed,Needs review,9,True,True,True,True,False,True,CORRECT,False,0,,False,eu,0
+1,TC04,TC04__altlayout,FIELD_NOT_FOUND;QUANTITY_EXCEEDS_PO,False,high,False,True,,Needs review,False,F18,total_missed,Needs review,7,True,True,True,True,False,True,CORRECT,False,0,,False,altlayout,0
+1,TC04,TC04__noisy,FIELD_NOT_FOUND;QUANTITY_EXCEEDS_PO,False,high,False,True,,Needs review,False,F18,total_missed,Needs review,15,True,True,True,True,False,True,CORRECT,False,0,,False,noisy,0
+1,TC04,TC04__eu,FIELD_NOT_FOUND;LOW_CONFIDENCE_EXTRACTION;QUANTITY_EXCEEDS_PO,False,low,False,True,,Needs review,False,F18,total_missed,Needs review,10,True,True,True,True,False,True,CORRECT,False,0,,False,eu,0
+1,TC05,TC05__altlayout,EXACT_DUPLICATE;FIELD_NOT_FOUND,True,high,False,True,,Reject (hold),False,F18,total_missed,Reject (hold),10,True,True,True,True,False,True,CORRECT,False,0,,False,altlayout,0
+1,TC05,TC05__noisy,EXACT_DUPLICATE;FIELD_NOT_FOUND,True,high,False,True,,Reject (hold),False,F18,total_missed,Reject (hold),16,True,True,True,True,False,True,CORRECT,False,0,,False,noisy,0
+1,TC05,TC05__eu,EXACT_DUPLICATE;FIELD_NOT_FOUND;LOW_CONFIDENCE_EXTRACTION,True,low,False,True,,Reject (hold),False,F18,total_missed,Reject (hold),8,True,True,True,True,False,True,CORRECT,False,0,,False,eu,0
+1,TC06,TC06__altlayout,FIELD_NOT_FOUND,False,high,False,False,,Needs review,False,F18,total_missed,Needs review,7,True,True,True,True,False,True,CORRECT,False,0,,False,altlayout,0
+1,TC06,TC06__noisy,FIELD_NOT_FOUND,False,high,False,False,,Needs review,False,F18,total_missed,Needs review,14,True,True,True,True,False,True,CORRECT,False,0,,False,noisy,0
+1,TC06,TC06__eu,FIELD_NOT_FOUND;LOW_CONFIDENCE_EXTRACTION,False,low,False,False,,Needs review,False,F18,total_missed,Needs review,7,True,True,True,True,False,True,CORRECT,False,0,,False,eu,0
+1,TC07,TC07__altlayout,FIELD_NOT_FOUND;PO_MISSING_ON_INVOICE,True,high,False,True,,Needs review,False,F18,total_missed,Needs review,9,True,True,True,True,False,True,CORRECT,False,0,,False,altlayout,0
+1,TC07,TC07__noisy,FIELD_NOT_FOUND;PO_MISSING_ON_INVOICE,True,high,False,True,,Needs review,False,F18,total_missed,Needs review,13,True,True,True,True,False,True,CORRECT,False,0,,False,noisy,0
+1,TC07,TC07__eu,FIELD_NOT_FOUND;LOW_CONFIDENCE_EXTRACTION;PO_MISSING_ON_INVOICE,True,low,False,True,,Needs review,False,F18,total_missed,Needs review,7,True,True,True,True,False,True,CORRECT,False,0,,False,eu,0
+1,TC08,TC08__altlayout,FIELD_NOT_FOUND;PO_NOT_FOUND,True,high,False,True,,Reject (hold),False,F18,total_missed,Reject (hold),6,True,True,True,True,False,True,CORRECT,False,0,,False,altlayout,0
+1,TC08,TC08__noisy,FIELD_NOT_FOUND;PO_NOT_FOUND,True,high,False,True,,Reject (hold),False,F18,total_missed,Reject (hold),17,True,True,True,True,False,True,CORRECT,False,0,,False,noisy,0
+1,TC08,TC08__eu,FIELD_NOT_FOUND;LOW_CONFIDENCE_EXTRACTION;PO_NOT_FOUND,True,low,False,True,,Reject (hold),False,F18,total_missed,Reject (hold),7,True,True,True,True,False,True,CORRECT,False,0,,False,eu,0
+1,TC09,TC09__altlayout,FIELD_NOT_FOUND,True,high,False,False,,Approve,False,F18,total_missed,Needs review,9,True,True,True,True,False,True,DETECTED,False,0,,False,altlayout,0
+1,TC09,TC09__noisy,FIELD_NOT_FOUND,True,high,False,False,,Approve,False,F18,total_missed,Needs review,15,True,True,True,True,False,True,DETECTED,False,0,,False,noisy,0
+1,TC09,TC09__eu,FIELD_NOT_FOUND;LOW_CONFIDENCE_EXTRACTION,True,low,False,False,,Approve,False,F18,total_missed,Needs review,8,True,True,True,True,False,True,DETECTED,False,0,,False,eu,0
+1,TC11,TC11__altlayout,CURRENCY_MISMATCH;FIELD_NOT_FOUND,True,high,False,True,,Needs review,False,F18,total_missed,Needs review,9,True,True,True,True,False,True,CORRECT,False,0,,False,altlayout,0
+1,TC11,TC11__noisy,CURRENCY_MISMATCH;FIELD_NOT_FOUND,True,high,False,True,,Needs review,False,F18,total_missed,Needs review,13,True,True,True,True,False,True,CORRECT,False,0,,False,noisy,0
+1,TC11,TC11__eu,CURRENCY_MISMATCH;FIELD_NOT_FOUND;LOW_CONFIDENCE_EXTRACTION,True,low,False,True,,Needs review,False,F18,total_missed,Needs review,10,True,True,True,True,False,True,CORRECT,False,0,,False,eu,0
+1,TC12,TC12__altlayout,FIELD_NOT_FOUND;SUSPICIOUS_TEXT;UNIT_PRICE_MISMATCH,False,high,False,True,,Needs review,False,F18,total_missed,Needs review,15,True,True,True,True,False,True,CORRECT,True,0,,False,altlayout,0
+1,TC12,TC12__noisy,FIELD_NOT_FOUND;SUSPICIOUS_TEXT;UNIT_PRICE_MISMATCH,False,high,False,True,,Needs review,False,F18,total_missed,Needs review,27,True,True,True,True,False,True,CORRECT,True,0,,False,noisy,0
+1,TC12,TC12__eu,FIELD_NOT_FOUND;LOW_CONFIDENCE_EXTRACTION;SUSPICIOUS_TEXT;UNIT_PRICE_MISMATCH,False,low,False,True,,Needs review,False,F18,total_missed,Needs review,15,True,True,True,True,False,True,CORRECT,True,0,,False,eu,0

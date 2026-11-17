@@ -1,0 +1,15 @@
+case  run expected       got            label codes conf   email  ms
+TC01  1   Approve        Approve        PASS  PASS  high   False 14
+TC02  1   Approve        Approve        PASS  PASS  high   False 10
+TC03  1   Needs review   Needs review   PASS  PASS  high   True  10
+TC04  1   Needs review   Needs review   PASS  PASS  high   True  10
+TC05  1   Reject (hold)  Reject (hold)  PASS  PASS  high   True  10
+TC06  1   Needs review   Needs review   PASS  PASS  high   True  9
+TC07  1   Needs review   Needs review   PASS  PASS  high   True  8
+TC08  1   Reject (hold)  Reject (hold)  PASS  PASS  high   True  10
+TC09  1   Approve        Approve        PASS  PASS  high   False 10
+TC10  1   Needs review   Needs review   PASS  PASS  high   False 15
+TC11  1   Needs review   Needs review   PASS  PASS  high   True  10
+TC12  1   Needs review   Needs review   PASS  PASS  high   True  12
+
+label correct: 12/12   required codes present: 12/12

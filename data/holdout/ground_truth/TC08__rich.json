@@ -1,0 +1,16 @@
+{
+  "vendor_name": "Summit Packaging",
+  "invoice_number": "SP-20433",
+  "invoice_date": "2026-10-25",
+  "po_number": "PO-9999",
+  "currency": "USD",
+  "line_items": [
+    {
+      "description": "Mailer box",
+      "quantity": 100,
+      "unit_price": 9.5,
+      "amount": 950.0
+    }
+  ],
+  "total": 950.0
+}

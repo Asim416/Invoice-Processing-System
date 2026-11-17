@@ -1,0 +1,5 @@
+vendor_name,invoice_number,invoice_date,total,currency,po_number,recommended_label,human_decision,run_id,confirmed_at,note
+Keystone IT Services,INV-7788,2026-10-14,1900.00,USD,PO-1005,Approve,approve,seed0001,2026-10-15T09:30:00+00:00,seed (synthetic)
+Delta Cables Co,DC-88204,2026-10-20,800.00,USD,PO-1006,Approve,approve,seed0002,2026-10-21T10:00:00+00:00,seed (synthetic)
+"Jacobs, Russell and Perry Freeman-Spencer",30362538,2013-08-12,,USD,,Needs review,approve,4d9ee1fd2c11,2026-11-17T10:13:51+00:00,jjjjj
+Shaffer-Hill,45852677,2019-09-24,599.46,USD,,Needs review,approve,697abcb43a6b,2026-11-17T12:22:31+00:00,

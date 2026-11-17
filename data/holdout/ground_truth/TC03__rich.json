@@ -1,0 +1,22 @@
+{
+  "vendor_name": "Acme Supplies Ltd",
+  "invoice_number": "4471",
+  "invoice_date": "2026-11-02",
+  "po_number": "PO-1023",
+  "currency": "USD",
+  "line_items": [
+    {
+      "description": "Laptop 15 inch",
+      "quantity": 50,
+      "unit_price": 850.0,
+      "amount": 42500.0
+    },
+    {
+      "description": "Docking station",
+      "quantity": 50,
+      "unit_price": 100.0,
+      "amount": 5000.0
+    }
+  ],
+  "total": 47500.0
+}

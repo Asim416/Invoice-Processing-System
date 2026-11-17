@@ -1,0 +1,16 @@
+{
+  "vendor_name": "Orbit Office Furniture",
+  "invoice_number": "INV-5107",
+  "invoice_date": "2026-10-22",
+  "po_number": null,
+  "currency": "USD",
+  "line_items": [
+    {
+      "description": "Monitor arm",
+      "quantity": 10,
+      "unit_price": 130.0,
+      "amount": 1300.0
+    }
+  ],
+  "total": 1300.0
+}

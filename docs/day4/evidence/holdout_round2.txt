@@ -1,0 +1,13 @@
+fault                             CORRECT   DETECTED FALSE_ALAR UNDER_FLAG  OVER_FLAG CRITICAL_M WRONG_DATA      ERROR   runs
+H01 date_is_delivery_date               7          3          0          2          0          0          0          0   12
+H02 date_is_order_date                  7          3          0          2          0          0          0          0   12
+H03 invoice_no_is_customer_ref          7          3          0          2          0          0          0          0   12
+H04 vendor_is_remit_to                  9          3          0          0          0          0          0          0   12
+H05 total_and_line_replaced             4          0          0          2          0          0          0          0   6
+H06 po_is_customer_ref                  2          3          0          0          7          0          0          0   12
+H07 date_wrong_year                     7          3          0          2          0          0          0          0   12
+TOTAL                                  43         18          0         10          7          0          0          0   78
+
+UNSAFE runs (approved what must not be, or approved on wrong data): 0   confidence at the time: {}
+
+written: /mnt/user-data/outputs/ap-invoice-system/results/day4_round2_holdout.csv

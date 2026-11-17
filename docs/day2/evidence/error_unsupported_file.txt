@@ -1,0 +1,10 @@
+{"ts": "2026-11-14T08:37:37", "level": "INFO", "event": "input_rejected", "error_code": "UNSUPPORTED_FILE_TYPE"}
+{
+  "error_code": "UNSUPPORTED_FILE_TYPE",
+  "message": "Only PDF files are supported. Received: x.docx",
+  "retryable": false,
+  "run_id": null,
+  "details": {
+    "received_extension": ".docx"
+  }
+}

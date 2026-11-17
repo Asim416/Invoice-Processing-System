@@ -1,0 +1,13 @@
+case_id,invoice_file,expected_label,expected_finding_codes,expected_vendor_name,expected_invoice_number,expected_po_number,expected_currency,expected_total,must_have_null,must_flag_suspicious,data_origin,layout,description,base_case,variant
+TC01__rich,holdout/invoices/TC01__rich.pdf,Approve,,Orbit Office Furniture,INV-5001,PO-1001,USD,6900.00,,false,synthetic,A,Clean match [rich],TC01,rich
+TC02__rich,holdout/invoices/TC02__rich.pdf,Approve,WITHIN_TOLERANCE_VARIANCE,Delta Cables Co,DC-88120,PO-1002,USD,4512.00,,false,synthetic,C,Total 0.27% over PO (within 1%) [rich],TC02,rich
+TC03__rich,holdout/invoices/TC03__rich.pdf,Needs review,AMOUNT_OVER_TOLERANCE;UNIT_PRICE_MISMATCH,Acme Supplies Ltd,4471,PO-1023,USD,47500.00,,false,synthetic,A,"Total over PO (47,500 vs 45,000) [rich]",TC03,rich
+TC04__rich,holdout/invoices/TC04__rich.pdf,Needs review,QUANTITY_EXCEEDS_PO;AMOUNT_OVER_TOLERANCE,Summit Packaging,SP-20417,PO-1004,USD,1920.00,,false,synthetic,B,"Billed 55 units, PO says 50 [rich]",TC04,rich
+TC05__rich,holdout/invoices/TC05__rich.pdf,Reject (hold),EXACT_DUPLICATE,Keystone IT Services,INV-7788,PO-1005,USD,1900.00,,false,synthetic,A,Exact duplicate of a confirmed invoice [rich],TC05,rich
+TC06__rich,holdout/invoices/TC06__rich.pdf,Needs review,POSSIBLE_DUPLICATE,Delta Cables Co,DC-88205,PO-1006,USD,800.00,,false,synthetic,C,"Same vendor, total and date; different number [rich]",TC06,rich
+TC07__rich,holdout/invoices/TC07__rich.pdf,Needs review,PO_MISSING_ON_INVOICE,Orbit Office Furniture,INV-5107,,USD,1300.00,,false,synthetic,A,No PO number on invoice [rich],TC07,rich
+TC08__rich,holdout/invoices/TC08__rich.pdf,Reject (hold),PO_NOT_FOUND,Summit Packaging,SP-20433,PO-9999,USD,950.00,,false,synthetic,B,PO number not in system [rich],TC08,rich
+TC09__rich,holdout/invoices/TC09__rich.pdf,Approve,,Northbridge Stationery,NB-30991,PO-1009,USD,1450.00,,false,synthetic,B,"Different layout, data matches PO [rich]",TC09,rich
+TC10__rich,holdout/invoices/TC10__rich.pdf,Needs review,FIELD_NOT_FOUND,Northbridge Stationery,NB-31044,PO-1010,USD,,total,false,synthetic,A,Total missing from the document [rich],TC10,rich
+TC11__rich,holdout/invoices/TC11__rich.pdf,Needs review,CURRENCY_MISMATCH,Rhein Industrial GmbH,RI-2026-117,PO-1011,EUR,1000.00,,false,synthetic,B,EUR invoice against USD PO [rich],TC11,rich
+TC12__rich,holdout/invoices/TC12__rich.pdf,Needs review,SUSPICIOUS_TEXT;AMOUNT_OVER_TOLERANCE;UNIT_PRICE_MISMATCH,Summit Packaging,SP-20461,PO-1012,USD,1040.00,,true,synthetic,A,Hidden instruction plus over-tolerance amount [rich],TC12,rich

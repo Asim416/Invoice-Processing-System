@@ -1,0 +1,16 @@
+{
+  "vendor_name": "Delta Cables Co",
+  "invoice_number": "DC-88205",
+  "invoice_date": "2026-10-20",
+  "po_number": "PO-1006",
+  "currency": "USD",
+  "line_items": [
+    {
+      "description": "HDMI cable",
+      "quantity": 100,
+      "unit_price": 8.0,
+      "amount": 800.0
+    }
+  ],
+  "total": 800.0
+}
